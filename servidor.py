@@ -51,9 +51,18 @@ def log(emoji, msg, cor=Cor.RESET):
 
 # ── Servidor HTTP Local (silencioso) ──────────────────────
 class ServidorSilencioso(http.server.SimpleHTTPRequestHandler):
-    """Serve os arquivos sem poluir o terminal com cada request."""
+    """Serve os arquivos sem poluir o terminal e com suporte a rotas limpas sem .html."""
     def log_message(self, format, *args):
         pass  # silencia os logs do servidor
+
+    def do_GET(self):
+        # Suporte a URLs amigáveis sem .html (ex: /autismo serve /autismo.html)
+        raw_path = self.path.split('?')[0].split('#')[0]
+        local_path = self.translate_path(raw_path)
+        if not os.path.exists(local_path) and os.path.exists(local_path + ".html"):
+            query = ('?' + self.path.split('?')[1]) if '?' in self.path else ''
+            self.path = raw_path + ".html" + query
+        return super().do_GET()
 
 servidor_httpd = None
 tunnel_process = None
@@ -100,9 +109,9 @@ def iniciar_tunel():
             print(f"  ║                                                          ║")
             print(f"  ║   Páginas disponíveis:                                   ║")
             print(f"  ║     • {url}/                            ║")
-            print(f"  ║     • {url}/autismo.html                ║")
-            print(f"  ║     • {url}/professores.html            ║")
-            print(f"  ║     • {url}/estudantes.html             ║")
+            print(f"  ║     • {url}/autismo                     ║")
+            print(f"  ║     • {url}/professores                 ║")
+            print(f"  ║     • {url}/estudantes                  ║")
             print(f"  ║                                                          ║")
             print(f"  ╚══════════════════════════════════════════════════════════╝{Cor.RESET}")
             print()
