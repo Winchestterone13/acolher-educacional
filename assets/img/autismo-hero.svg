@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 360" width="100%" height="100%" role="img" aria-label="Ilustração do Espectro Autista">
+  <defs>
+    <linearGradient id="spectrumGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#3b82f6" />
+      <stop offset="35%" stop-color="#06b6d4" />
+      <stop offset="70%" stop-color="#10b981" />
+      <stop offset="100%" stop-color="#f59e0b" />
+    </linearGradient>
+    <linearGradient id="softBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f0f9ff" />
+      <stop offset="100%" stop-color="#f5f3ff" />
+    </linearGradient>
+    <filter id="cardShadow" x="-10%" y="-10%" width="125%" height="125%">
+      <feDropShadow dx="0" dy="6" stdDeviation="10" flood-color="#0f172a" flood-opacity="0.07" />
+    </filter>
+  </defs>
+
+  <!-- Background shape -->
+  <path d="M 50,170 C 20,70 130,20 250,30 C 370,40 460,90 440,210 C 420,310 330,350 210,345 C 90,340 60,260 50,170 Z" fill="url(#softBg)" />
+
+  <!-- Neurodiversity Infinity Symbol in Rainbow / Spectrum tones -->
+  <g transform="translate(130, 75)" filter="url(#cardShadow)">
+    <rect x="-20" y="-10" width="260" height="150" rx="20" fill="#ffffff" />
+    <!-- Infinity Path -->
+    <path d="M 60,65 C 20,25 20,105 60,65 C 100,25 120,105 160,65 C 200,25 200,105 160,65 C 120,25 100,105 60,65 Z" 
+          fill="none" stroke="url(#spectrumGradient)" stroke-width="18" stroke-linecap="round" stroke-linejoin="round" />
+  </g>
+
+  <!-- Supportive Cards around -->
+  <g transform="translate(40, 210)" filter="url(#cardShadow)">
+    <rect width="160" height="70" rx="14" fill="#ffffff" />
+    <circle cx="32" cy="35" r="14" fill="#e0f2fe" />
+    <text x="32" y="40" font-family="Inter, sans-serif" font-size="14" text-anchor="middle">🧩</text>
+    <text x="56" y="32" font-family="Inter, sans-serif" font-size="12" font-weight="700" fill="#0f172a">Individualidade</text>
+    <text x="56" y="48" font-family="Inter, sans-serif" font-size="11" fill="#64748b">Cada pessoa é única</text>
+  </g>
+
+  <g transform="translate(260, 220)" filter="url(#cardShadow)">
+    <rect width="180" height="70" rx="14" fill="#ffffff" />
+    <circle cx="32" cy="35" r="14" fill="#fef3c7" />
+    <text x="32" y="40" font-family="Inter, sans-serif" font-size="14" text-anchor="middle">💡</text>
+    <text x="56" y="32" font-family="Inter, sans-serif" font-size="12" font-weight="700" fill="#0f172a">Previsibilidade</text>
+    <text x="56" y="48" font-family="Inter, sans-serif" font-size="11" fill="#64748b">Rotinas acolhedoras</text>
+  </g>
+</svg>

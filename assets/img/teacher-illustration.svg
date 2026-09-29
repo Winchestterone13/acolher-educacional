@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 300" width="100%" height="100%" role="img" aria-label="Estratégias de inclusão em sala">
+  <defs>
+    <linearGradient id="teachGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#eff6ff" />
+      <stop offset="100%" stop-color="#ecfdf5" />
+    </linearGradient>
+    <filter id="cardSh" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="4" stdDeviation="8" flood-color="#0f172a" flood-opacity="0.06" />
+    </filter>
+  </defs>
+
+  <rect width="420" height="300" rx="20" fill="url(#teachGrad)" />
+
+  <g transform="translate(30, 30)" filter="url(#cardSh)">
+    <rect width="360" height="240" rx="16" fill="#ffffff" />
+    <!-- Visual schedule cards -->
+    <text x="30" y="40" font-family="Inter, sans-serif" font-size="14" font-weight="700" fill="#1e3a8a">Rotina Visual Acessível</text>
+    
+    <!-- Item 1 -->
+    <rect x="30" y="60" width="90" height="70" rx="10" fill="#f8fafc" stroke="#e2e8f0" />
+    <text x="75" y="90" font-size="20" text-anchor="middle">📖</text>
+    <text x="75" y="115" font-family="Inter, sans-serif" font-size="10" font-weight="600" fill="#475569" text-anchor="middle">1. Leitura</text>
+
+    <!-- Item 2 -->
+    <rect x="135" y="60" width="90" height="70" rx="10" fill="#f8fafc" stroke="#e2e8f0" />
+    <text x="180" y="90" font-size="20" text-anchor="middle">✏️</text>
+    <text x="180" y="115" font-family="Inter, sans-serif" font-size="10" font-weight="600" fill="#475569" text-anchor="middle">2. Atividade</text>
+
+    <!-- Item 3 -->
+    <rect x="240" y="60" width="90" height="70" rx="10" fill="#f8fafc" stroke="#e2e8f0" />
+    <text x="285" y="90" font-size="20" text-anchor="middle">🥪</text>
+    <text x="285" y="115" font-family="Inter, sans-serif" font-size="10" font-weight="600" fill="#475569" text-anchor="middle">3. Intervalo</text>
+
+    <!-- Calming message -->
+    <rect x="30" y="150" width="300" height="65" rx="12" fill="#f0fdf4" stroke="#bbf7d0" />
+    <text x="50" y="176" font-family="Inter, sans-serif" font-size="12" font-weight="700" fill="#166534">💡 Dica Prática de Gestão</text>
+    <text x="50" y="196" font-family="Inter, sans-serif" font-size="11" fill="#15803d">Combinar sinais discretos para pausas sensoriais reduz a ansiedade.</text>
+  </g>
+</svg>

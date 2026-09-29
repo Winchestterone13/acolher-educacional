@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 460 320" width="100%" height="100%" role="img" aria-label="Ilustração de apoio ao estudante">
+  <defs>
+    <linearGradient id="studGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#eff6ff" />
+      <stop offset="100%" stop-color="#f5f3ff" />
+    </linearGradient>
+    <filter id="studSh" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="6" stdDeviation="10" flood-color="#0f172a" flood-opacity="0.07" />
+    </filter>
+  </defs>
+
+  <rect width="460" height="320" rx="24" fill="url(#studGrad)" />
+
+  <g transform="translate(60, 45)" filter="url(#studSh)">
+    <rect width="340" height="230" rx="20" fill="#ffffff" />
+    
+    <!-- Top badge -->
+    <rect x="25" y="25" width="130" height="28" rx="14" fill="#ede9fe" />
+    <text x="90" y="43" font-family="Inter, sans-serif" font-size="11" font-weight="700" fill="#6d28d9" text-anchor="middle">ESPAÇO SEGURO</text>
+
+    <!-- Warm quote -->
+    <text x="25" y="85" font-family="Inter, sans-serif" font-size="16" font-weight="700" fill="#1e293b">Suas emoções importam.</text>
+    <text x="25" y="110" font-family="Inter, sans-serif" font-size="13" fill="#64748b">Você não precisa carregar tudo sozinho.</text>
+
+    <!-- Support pills -->
+    <g transform="translate(25, 135)">
+      <rect width="90" height="36" rx="18" fill="#e0f2fe" />
+      <text x="45" y="22" font-family="Inter, sans-serif" font-size="11" font-weight="600" fill="#0369a1" text-anchor="middle">💙 Escuta</text>
+    </g>
+
+    <g transform="translate(125, 135)">
+      <rect width="90" height="36" rx="18" fill="#dcfce7" />
+      <text x="45" y="22" font-family="Inter, sans-serif" font-size="11" font-weight="600" fill="#15803d" text-anchor="middle">🌱 Respeito</text>
+    </g>
+
+    <g transform="translate(225, 135)">
+      <rect width="90" height="36" rx="18" fill="#fef3c7" />
+      <text x="45" y="22" font-family="Inter, sans-serif" font-size="11" font-weight="600" fill="#b45309" text-anchor="middle">🤝 Diálogo</text>
+    </g>
+
+    <line x1="25" y1="190" x2="315" y2="190" stroke="#f1f5f9" stroke-width="2" />
+    <text x="25" y="210" font-family="Inter, sans-serif" font-size="11" font-style="italic" fill="#94a3b8">Pedir ajuda é um ato de coragem e autocuidado.</text>
+  </g>
+</svg>

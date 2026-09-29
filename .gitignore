@@ -1,0 +1,12 @@
+# Node
+node_modules/
+npm-debug.log
+
+# Python
+__pycache__/
+*.py[cod]
+.env
+
+# OS
+.DS_Store
+Thumbs.db

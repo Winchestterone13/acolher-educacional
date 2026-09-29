@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Professores – Acolher</title>
+  <link rel="stylesheet" href="assets/css/design.css" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Header Principal com Navegação e Acessibilidade -->
+  <header class="site-header" role="banner">
+    <div class="logo-wrapper">
+      <a href="index.html" class="logo" aria-label="Acolher - Página inicial">
+        <div class="logo-icon" aria-hidden="true">💙</div>
+        Acolher
+        <span>Educação</span>
+      </a>
+    </div>
+
+    <nav aria-label="Menu principal">
+      <ul class="nav-list">
+        <li><a href="index.html" class="nav-link">Início</a></li>
+        <li><a href="autismo.html" class="nav-link">Autismo</a></li>
+        <li><a href="professores.html" class="nav-link active" aria-current="page">Professores</a></li>
+        <li><a href="estudantes.html" class="nav-link">Estudantes</a></li>
+        <li><a href="index.html#saude-mental" class="nav-link">Saúde Mental</a></li>
+        <li><a href="index.html#rede-apoio" class="nav-link">Rede de Apoio</a></li>
+      </ul>
+    </nav>
+
+    <div class="accessibility-toolbar" aria-label="Barra de ferramentas de acessibilidade">
+      <button id="increase-text" aria-label="Aumentar tamanho da fonte" title="Aumentar fonte">A+</button>
+      <button id="decrease-text" aria-label="Diminuir tamanho da fonte" title="Diminuir fonte">A-</button>
+      <button id="toggle-contrast" aria-label="Alternar modo de alto contraste" title="Alto contraste">Contraste</button>
+    </div>
+  </header>
+
+  <!-- Hero specific for Professores -->
+  <section class="hero hero-professor" id="hero-professor">
+    <div class="hero-text">
+      <p class="subtitle">ORIENTAR • ACOLHER • INCLUIR</p>
+      <h1>Pequenas atitudes podem transformar a experiência de um estudante.</h1>
+      <p class="description">O professor não precisa ter todas as respostas. Observar, escutar, adaptar e saber quando procurar apoio já são passos importantes para construir um ambiente escolar mais acolhedor.</p>
+      <div class="hero-buttons">
+        <a href="#situacoes" class="btn primary">Ver situações do cotidiano</a>
+        <a href="#boas-praticas" class="btn secondary">Boas práticas em sala</a>
+      </div>
+    </div>
+    <div class="hero-illustration" aria-hidden="true">
+      <img src="assets/img/professor-hero.svg" alt="Ilustração de professor e estudantes em ambiente inclusivo" />
+    </div>
+  </section>
+
+  <!-- In‑page navigation -->
+  <nav class="page-nav" aria-label="Navegação interna da página Professores">
+    <ul>
+      <li><a href="#papel-do-professor">O papel do professor</a></li>
+      <li><a href="#preparando-sala">Preparando a sala</a></li>
+      <li><a href="#comunicacao">Comunicação</a></li>
+      <li><a href="#situacoes">Central de situações</a></li>
+      <li><a href="#sobrecarga">Sobrecarga</a></li>
+      <li><a href="#saude-mental">Saúde mental</a></li>
+      <li><a href="#conversando">Como iniciar conversa</a></li>
+      <li><a href="#familia-equipe">Família e equipe escolar</a></li>
+      <li><a href="#checklist">Checklist</a></li>
+    </ul>
+  </nav>
+
+  <!-- 1. O PAPEL DO PROFESSOR -->
+  <section class="section" id="papel-do-professor">
+    <h2>O professor não precisa ser especialista para acolher</h2>
+    <p>O convívio diário permite que professores percebam comportamentos, mudanças e dificuldades que podem passar despercebidos em outros contextos.</p>
+    <p>O papel do professor não é realizar diagnóstico médico ou psicológico.</p>
+    <p>Seu papel pode incluir observar, ouvir, registrar situações relevantes, adaptar práticas pedagógicas possíveis e comunicar preocupações à equipe escolar e aos responsáveis quando necessário.</p>
+    <div class="flow-diagram">
+      <span>OBSERVAR</span> → <span>ESCUTAR</span> → <span>ACOLHER</span> → <span>ADAPTAR</span> → <span>COMPARTILHAR</span> → <span>BUSCAR APOIO</span>
+    </div>
+    <div class="not-professor">
+      <h4>Não é papel do professor:</h4>
+      <ul>
+        <li>Diagnosticar</li>
+        <li>Prescrever tratamento</li>
+        <li>Assumir sozinho situações complexas</li>
+        <li>Prometer sigilo absoluto em situações de risco</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- 2. PREPARANDO UMA SALA MAIS ACOLHEDORA -->
+  <section class="section" id="preparando-sala">
+    <h2>Inclusão também começa antes da aula</h2>
+    <p>Visualize a sala como ponto central. Ao redor, pontos interativos que ajudam a planejar.</p>
+    <div class="room-visual">
+      <img src="assets/img/sala.svg" alt="Representação simplificada de uma sala de aula" class="room-image" />
+      <div class="room-points">
+        <button class="room-point" data-id="rotina" aria-label="Rotina">1</button>
+        <button class="room-point" data-id="instrucao" aria-label="Instruções">2</button>
+        <button class="room-point" data-id="ambiente" aria-label="Ambiente">3</button>
+        <button class="room-point" data-id="participacao" aria-label="Participação">4</button>
+        <button class="room-point" data-id="mudancas" aria-label="Mudanças">5</button>
+        <button class="room-point" data-id="apoio" aria-label="Apoio">6</button>
+      </div>
+    </div>
+    <aside class="room-info" id="room-info">
+      <!-- Content will be filled by JS when a point is clicked -->
+    </aside>
+  </section>
+
+  <!-- 3. COMUNICAÇÃO -->
+  <section class="section" id="comunicacao">
+    <h2>A forma como falamos também pode acolher</h2>
+    <div class="compare-grid">
+      <div class="compare-item">
+        <h3>Situação: aluno não iniciou atividade</h3>
+        <p><strong>Evite:</strong> "Você não está prestando atenção."</p>
+        <p><strong>Prefira:</strong> "Você entendeu o que precisa fazer ou quer que eu explique de outra forma?"</p>
+      </div>
+      <div class="compare-item">
+        <h3>Situação: aluno está muito agitado</h3>
+        <p><strong>Evite:</strong> "Pare com isso agora."</p>
+        <p><strong>Prefira:</strong> "Percebi que você está desconfortável. Tem alguma coisa incomodando?"</p>
+      </div>
+      <div class="compare-item">
+        <h3>Situação: aluno não terminou tarefa</h3>
+        <p><strong>Evite:</strong> "Todo mundo conseguiu menos você."</p>
+        <p><strong>Prefira:</strong> "Qual parte está mais difícil? Podemos começar por ela."</p>
+      </div>
+    </div>
+    <blockquote class="highlight">
+      <p>Os exemplos não são roteiros obrigatórios. O objetivo é demonstrar uma comunicação que busca compreender antes de julgar.</p>
+    </blockquote>
+  </section>
+
+  <!-- 4. CENTRAL DE SITUAÇÕES -->
+  <section class="section" id="situacoes">
+    <h2>O que está acontecendo?</h2>
+    <p>Escolha uma situação para encontrar orientações iniciais.</p>
+    <div class="situations-grid">
+      <button class="situation-card" data-id="barulho">Ambiente muito barulhento</button>
+      <button class="situation-card" data-id="agitado">Estudante muito agitado</button>
+      <button class="situation-card" data-id="isolado">Estudante se isolou</button>
+      <button class="situation-card" data-id="mudanca">Mudança inesperada na rotina</button>
+      <button class="situation-card" data-id="naoparticipa">Estudante não quer participar</button>
+      <button class="situation-card" data-id="chorou">Estudante começou a chorar</button>
+      <button class="situation-card" data-id="naoexplica">Estudante não consegue explicar o que sente</button>
+      <button class="situation-card" data-id="grupo">Dificuldade em atividade de grupo</button>
+      <button class="situation-card" data-id="rendimento">Rendimento mudou bastante</button>
+      <button class="situation-card" data-id="bullying">Aluno está sofrendo bullying</button>
+    </div>
+    <div class="situation-detail" id="situation-detail">
+      <!-- Details populated via JS -->
+    </div>
+  </section>
+
+  <!-- 5. MODELO PARA AS SITUAÇÕES (template for JS) -->
+  <template id="situation-template">
+    <div class="situation-content">
+      <h3 class="situation-title"></h3>
+      <div class="situation-parts">
+        <section class="part">
+          <h4>O que observar</h4>
+          <ul class="obs-list"></ul>
+        </section>
+        <section class="part">
+          <h4>O que pode ajudar</h4>
+          <ul class="ajuda-list"></ul>
+        </section>
+        <section class="part">
+          <h4>O que evitar</h4>
+          <ul class="evitar-list"></ul>
+        </section>
+        <section class="part">
+          <h4>Quando buscar apoio</h4>
+          <p class="apoio-text"></p>
+        </section>
+      </div>
+    </div>
+  </template>
+
+  <!-- 6. SOBRECARGA -->
+  <section class="section" id="sobrecarga">
+    <h2>Quando muitos estímulos se acumulam</h2>
+    <p>Alguns estudantes podem ficar sobrecarregados diante de muitos estímulos, demandas ou situações difíceis ao mesmo tempo.</p>
+    <div class="overload-diagram">
+      <div class="stimuli">BARULHO</div>
+      <div class="stimuli">MUDANÇA</div>
+      <div class="stimuli">ATIVIDADE DIFÍCIL</div>
+      <div class="stimuli">CANSAÇO</div>
+      <div class="stimuli">INTERAÇÃO SOCIAL</div>
+      <div class="result">SOBRECARGA</div>
+    </div>
+    <blockquote class="highlight">
+      <p>O comportamento visível pode ser apenas a parte final de vários fatores acumulados.</p>
+    </blockquote>
+  </section>
+
+  <!-- 7. QUANDO O ESTUDANTE ESTÁ SOBRECARREGADO -->
+  <section class="section" id="sobrecarga-acao">
+    <h2>Como agir quando o estudante está sobrecarregado</h2>
+    <ol class="step-list">
+      <li><strong>Reduza demandas imediatas</strong>: evite acrescentar várias perguntas ou instruções ao mesmo tempo.</li>
+      <li><strong>Diminua estímulos quando possível</strong>: um ambiente mais tranquilo pode ajudar.</li>
+      <li><strong>Fale de maneira simples</strong>: utilize frases curtas e claras.</li>
+      <li><strong>Dê tempo</strong>: nem sempre a resposta será imediata.</li>
+      <li><strong>Preserve a privacidade</strong>: evite transformar a situação em espetáculo diante da turma.</li>
+      <li><strong>Converse depois</strong>: quando o estudante estiver mais calmo, procure compreender o que aconteceu e quais estratégias futuras podem ajudar.</li>
+    </ol>
+    <blockquote class="highlight">
+      <p>O objetivo não é punir a reação. É compreender a necessidade.</p>
+    </blockquote>
+  </section>
+
+  <!-- 8. SAÚDE MENTAL -->
+  <section class="section" id="saude-mental">
+    <h2>Algumas mudanças merecem atenção</h2>
+    <p>Uma mudança de comportamento não significa automaticamente a presença de um transtorno mental. Entretanto, mudanças persistentes podem indicar que o estudante está enfrentando alguma dificuldade.</p>
+    <div class="cards-grid small">
+      <article class="card small">
+        <h4>Isolamento</h4>
+        <p></p>
+      </article>
+      <article class="card small">
+        <h4>Mudança importante de comportamento</h4>
+        <p></p>
+      </article>
+      <article class="card small">
+        <h4>Sofrimento emocional frequente</h4>
+        <p></p>
+      </article>
+      <article class="card small">
+        <h4>Dificuldade persistente de concentração</h</article>
+    </div>
+    <blockquote class="highlight">
+      <p>Observe mudanças em relação ao comportamento habitual daquele estudante, e não apenas comportamentos isolados.</p>
+    </blockquote>
+  </section>
+
+  <!-- 9. COMO INICIAR UMA CONVERSA -->
+  <section class="section" id="conversando">
+    <h2>Às vezes, uma conversa começa com uma pergunta simples</h2>
+    <div class="dialogue-example">
+      <p><strong>Professor:</strong> Percebi que você está mais quieto nos últimos dias. Está tudo bem?</p>
+      <p><strong>Estudante:</strong> Não sei.</p>
+      <p><strong>Professor:</strong> Tudo bem não saber explicar agora. Se quiser conversar, estou disponível e podemos procurar alguém que possa ajudar.</p>
+    </div>
+    <p>Durante a conversa:</p>
+    <ul>
+      <li>Escolha um ambiente adequado.</li>
+      <li>Escute sem interromper.</li>
+      <li>Evite minimizar a situação.</li>
+      <li>Não pressione por respostas imediatas.</li>
+      <li>Não prometa resolver tudo sozinho.</li>
+      <li>Acione a equipe responsável quando necessário.</li>
+    </ul>
+  </section>
+
+  <!-- 10. FRASES QUE PODEM FECHAR A CONVERSA -->
+  <section class="section" id="fechar-conversa">
+    <h2>Algumas respostas podem afastar em vez de aproximar</h2>
+    <div class="compare-grid">
+      <div class="compare-item">
+        <p><strong>Evite:</strong> "Isso não é nada."</p>
+        <p><strong>Prefira:</strong> "Quer me contar o que aconteceu?"</p>
+      </div>
+      <div class="compare-item">
+        <p><strong>Evite:</strong> "Na sua idade eu tive problemas maiores."</p>
+        <p><strong>Prefira:</strong> "Como isso está afetando você?"</p>
+      </div>
+      <div class="compare-item">
+        <p><strong>Evite:</strong> "Você precisa ser forte."</p>
+        <p><strong>Prefira:</strong> "O que você precisa neste momento?"</p>
+      </div>
+      <div class="compare-item">
+        <p><strong>Evite:</strong> "É só parar de pensar nisso."</p>
+        <p><strong>Prefira:</strong> "Vamos pensar em quem pode ajudar."</p>
+      </div>
+      <div class="compare-item">
+        <p><strong>Evite:</strong> "Você está exagerando."</p>
+        <p><strong>Prefira:</strong> "Obrigado por conversar comigo."</p>
+      </div>
+    </div>
+    <blockquote class="highlight">
+      <p>Não existe frase perfeita. Escuta e respeito são mais importantes que encontrar imediatamente uma solução.</p>
+    </blockquote>
+  </section>
+
+  <!-- 11. REGISTRAR PARA COMPREENDER -->
+  <section class="section" id="registrar">
+    <h2>Observar padrões pode ajudar</h2>
+    <pre class="record-example">
+DATA: 14/09
+SITUAÇÃO: Troca inesperada de sala
+O QUE ACONTECEU: Estudante ficou muito agitado e saiu da atividade.
+CONTEXTO: Sala nova, muito barulho.
+O QUE AJUDOU: Conversa individual e alguns minutos em ambiente mais tranquilo.
+    </pre>
+    <p>Registre fatos observáveis. Evite rótulos.</p>
+    <p><strong>Evite:</strong> "Aluno fez birra."</p>
+    <p><strong>Prefira:</strong> "Após a mudança de sala, o estudante chorou, cobriu os ouvidos e solicitou sair."</p>
+  </section>
+
+  <!-- 12. FAMÍLIA E EQUIPE ESCOLAR -->
+  <section class="section" id="familia-equipe">
+    <h2>Acolhimento funciona melhor em rede</h2>
+    <div class="flow-diagram">
+      <span>PROFESSOR</span> ↕ <span>ESTUDANTE</span> ↕ <span>FAMÍLIA</span> ↕ <span>EQUIPE ESCOLAR</span> ↕ <span>REDE DE APOIO</span>
+    </div>
+    <p>Compartilhar observações ajuda a compreender melhor as necessidades do estudante e construir estratégias consistentes.</p>
+    <p><strong>Evite:</strong> "Seu filho está dando muito trabalho."</p>
+    <p><strong>Prefira:</strong> "Percebemos que nas últimas semanas ele tem demonstrado bastante desconforto durante atividades muito barulhentas. Gostaríamos de entender se vocês também perceberam algo semelhante e pensar juntos em estratégias."</p>
+  </section>
+
+  <!-- 13. BULLYING E EXCLUSÃO -->
+  <section class="section" id="bullying">
+    <h2>Inclusão também significa proteger</h2>
+    <p>Apelidos ofensivos, humilhação, exclusão intencional e outras formas de violência não devem ser tratadas como simples brincadeiras quando causam sofrimento ou violam direitos.</p>
+    <ul>
+      <li>Acolher o estudante imediatamente.</li>
+      <li>Registrar a situação de forma objetiva.</li>
+      <li>Seguir os protocolos da instituição.</li>
+      <li>Comunicar a equipe responsável.</li>
+      <li>Evitar exposição desnecessária do estudante.</li>
+      <li>Acompanhar o caso de perto.</li>
+    </ul>
+  </section>
+
+  <!-- 14. CHECKLIST ANTES DA AULA -->
+  <section class="section" id="checklist">
+    <h2>Checklist de uma aula mais inclusiva</h2>
+    <ul class="checklist visual-checklist">
+      <li><input type="checkbox" disabled> As instruções estão claras?</li>
+      <li><input type="checkbox" disabled> Posso dividir a atividade em etapas?</li>
+      <li><input type="checkbox" disabled> Existe alguma mudança que devo antecipar?</li>
+      <li><input type="checkbox" disabled> Existem diferentes formas de participação?</li>
+      <li><input type="checkbox" disabled> O ambiente possui estímulos que podem dificultar a atividade?</li>
+      <li><input type="checkbox" disabled> Os estudantes sabem como pedir ajuda?</li>
+      <li><input type="checkbox" disabled> Estou avaliando aprendizagem sem comparar estudantes de maneira constrangedora?</li>
+    </ul>
+    <p>Marque os itens visualmente antes da aula. Não é necessário salvar.</p>
+  </section>
+
+  <!-- 15. DEPOIS DE UMA SITUAÇÃO DIFÍCIL -->
+  <section class="section" id="apos-situacao">
+    <h2>Depois que tudo passou, ainda existe algo a fazer</h2>
+    <ol>
+      <li><strong>Refletir:</strong> O que aconteceu antes da situação?</li>
+      <li><strong>Identificar:</strong> Havia algum gatilho ou barreira?</li>
+      <li><strong>Conversar:</strong> O estudante consegue explicar o que aconteceu?</li>
+      <li><strong>Planejar:</strong> O que podemos fazer diferente da próxima vez?</li>
+      <li><strong>Compartilhar:</strong> A equipe ou família precisa conhecer essa situação?</li>
+    </ol>
+    <p>Uma situação difícil também pode ajudar a construir estratégias melhores para o futuro.</p>
+  </section>
+
+  <!-- 16. O PROFESSOR TAMBÉM PRECISA DE APOIO -->
+  <section class="section" id="apoio-professor">
+    <h2>Cuidar não significa carregar tudo sozinho</h2>
+    <p>Professores também podem enfrentar sobrecarga e situações emocionalmente difíceis. Buscar apoio da equipe escolar e compartilhar responsabilidades faz parte de uma rede de cuidado saudável.</p>
+    <p>Você não precisa resolver sozinho situações que exigem atuação de outros profissionais.</p>
+  </section>
+
+  <!-- 17. QUANDO ENCAMINHAR -->
+  <section class="section" id="encaminhar">
+    <h2>Quando encaminhar</h2>
+    <div class="flow-diagram">
+      <span>PERCEBI ALGO</span> → <span>OBSERVEI</span> → <span>CONVERSEI</span> → <span>CONTINUA PREOCUPANTE?</span> → <span>ACIONAR EQUIPE / REDE DE APOIO</span>
+    </div>
+    <p>Situções persistentes, graves ou que indiquem sofrimento importante devem ser compartilhadas conforme os protocolos da instituição e a rede de proteção disponível.</p>
+  </section>
+
+  <!-- 18. RESUMO FINAL -->
+  <section class="section" id="resumo">
+    <h2>Leve estas cinco ideias com você</h2>
+    <ol>
+      <li>Comportamento precisa de contexto.</li>
+      <li>Cada estudante possui necessidades diferentes.</li>
+      <li>Comunicação clara pode evitar muitos conflitos.</li>
+      <li>Observar e acolher não significa diagnosticar.</li>
+      <li>O professor faz parte de uma rede — não precisa resolver tudo sozinho.</li>
+    </ol>
+  </section>
+
+  <!-- 19. FONTES -->
+  <section class="section" id="fontes">
+    <h2>Referências</h2>
+    <ul class="source-list">
+      <li>Organização Mundial da Saúde (OMS) – <a href="#" target="_blank">Ver fonte</a></li>
+      <li>UNICEF – <a href="#" target="_blank">Ver fonte</a></li>
+      <li>UNESCO – <a href="#" target="_blank">Ver fonte</a></li>
+      <li>Ministério da Saúde – <a href="#" target="_blank">Ver fonte</a></li>
+      <li>Fontes oficiais brasileiras de educação – <a href="#" target="_blank">Ver fonte</a></li>
+    </ul>
+  </section>
+
+  <footer class="site-footer" aria-label="Rodapé">
+    <div class="footer-grid">
+      <div class="footer-section">
+        <h3>Acolher</h3>
+        <p>Plataforma de apoio educacional focada em inclusão, autismo e saúde mental.</p>
+      </div>
+      <div class="footer-section">
+        <h3>Conteúdos</h3>
+        <ul>
+          <li><a href="autismo.html">Autismo</a></li>
+          <li><a href="index.html#saude-mental">Saúde Mental</a></li>
+          <li><a href="professores.html">Práticas Inclusivas</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h3>Para Você</h3>
+        <ul>
+          <li><a href="estudantes.html">Estudantes</a></li>
+          <li><a href="professores.html">Professores</a></li>
+          <li><a href="index.html#rede-apoio">Rede de apoio</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h3>Projeto</h3>
+        <ul>
+          <li><a href="#">Sobre</a></li>
+          <li><a href="#fontes">Fontes e referências</a></li>
+          <li><a href="#">Acessibilidade</a></li>
+        </ul>
+      </div>
+    </div>
+    <p class="footer-disclaimer">Este portal possui finalidade educativa e não substitui avaliação, diagnóstico ou acompanhamento realizado por profissionais qualificados.</p>
+  </footer>
+
+  <script src="assets/js/script.js"></script>
+  <script>
+    // Simple accordion for situation details
+    const situationsData = {
+      barulho: {
+        title: 'Ambiente muito barulhento',
+        observar: [
+          'Existe algum som específico causando desconforto?',
+          'O ambiente possui muitos estímulos simultâneos?',
+          'Isso ocorre frequentemente em situações semelhantes?'
+        ],
+        ajudar: [
+          'Conversar com o estudante;',
+          'Reduzir estímulos quando possível;',
+          'Permitir pausa em local adequado, conforme organização da escola;',
+          'Identificar previamente situações muito barulhentas;',
+          'Combinar estratégias com estudante e equipe escolar.'
+        ],
+        evitar: [
+          'Obrigar o estudante a permanecer na situação apenas para "se acostumar";',
+          'Ridicularizar o desconforto;',
+          'Assumir que é birra ou falta de interesse.'
+        ],
+        apoio: 'Se o desconforto persistir e interferir na aprendizagem, comunicar a equipe pedagógica ou de apoio.'
+      },
+      mudanca: {
+        title: 'Mudança inesperada na rotina',
+        observar: [
+          'Qual foi a mudança?',
+          'Como o estudante reagiu imediatamente?',
+          'Houve sinal de ansiedade ou confusão?'
+        ],
+        ajudar: [
+          'Explicar a mudança com antecedência quando possível;',
+          'Fornecer justificativa clara e concisa;',
+          'Oferecer suporte imediato (ex.: material de apoio, tempo extra).'
+        ],
+        evitar: [
+          'Ignorar a alteração e seguir sem aviso;',
+          'Pressionar para que o estudante se adapte instantaneamente.'
+        ],
+        apoio: 'Se a mudança gera grande estresse ou desregulação, envolver a equipe de apoio ou psicólogo escolar.'
+      },
+      // Additional situations can be added here following the same structure
+    };
+
+    document.querySelectorAll('.situation-card').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const id = btn.dataset.id;
+        const data = situationsData[id];
+        const container = document.getElementById('situation-detail');
+        if (!data) {
+          container.innerHTML = '<p>Detalhes ainda não disponíveis para esta situação.</p>';
+          return;
+        }
+        const tmpl = document.getElementById('situation-template');
+        const clone = tmpl.content.cloneNode(true);
+        clone.querySelector('.situation-title').textContent = data.title;
+        const obsList = clone.querySelector('.obs-list');
+        data.observar.forEach(item => {
+          const li = document.createElement('li'); li.textContent = item; obsList.appendChild(li);
+        });
+        const ajudaList = clone.querySelector('.ajuda-list');
+        data.ajudar.forEach(item => {
+          const li = document.createElement('li'); li.textContent = item; ajudaList.appendChild(li);
+        });
+        const evitarList = clone.querySelector('.evitar-list');
+        data.evitar.forEach(item => {
+          const li = document.createElement('li'); li.textContent = item; evitarList.appendChild(li);
+        });
+        clone.querySelector('.apoio-text').textContent = data.apoio;
+        container.innerHTML = '';
+        container.appendChild(clone);
+      });
+    });
+
+    // Room points interaction (simple tooltip style)
+    const roomInfo = document.getElementById('room-info');
+    const infoTexts = {
+      rotina: 'Quando possível, deixe claro o que acontecerá durante a aula.',
+      instrucao: 'Apresente orientações de maneira objetiva e considere dividir tarefas complexas em etapas menores.',
+      ambiente: 'Observe se barulho, iluminação ou excesso de estímulos estão dificultando a participação de algum estudante.',
+      participacao: 'Nem todos os estudantes participam e se comunicam da mesma maneira.',
+      mudancas: 'Quando possível, antecipe mudanças importantes na rotina.',
+      apoio: 'Combine previamente maneiras pelas quais o estudante pode comunicar que precisa de ajuda ou de uma pausa.'
+    };
+    document.querySelectorAll('.room-point').forEach(pt => {
+      pt.addEventListener('click', () => {
+        const id = pt.dataset.id;
+        roomInfo.innerHTML = `<p>${infoTexts[id]}</p>`;
+      });
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 360" width="100%" height="100%" role="img" aria-label="Planta humanizada da sala de aula acolhedora">
+  <defs>
+    <linearGradient id="floorGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f8fafc" />
+      <stop offset="100%" stop-color="#f1f5f9" />
+    </linearGradient>
+    <filter id="deskSh" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#0f172a" flood-opacity="0.06" />
+    </filter>
+  </defs>
+
+  <!-- Classroom Floor & Wall Perimeter -->
+  <rect x="20" y="20" width="560" height="320" rx="16" fill="url(#floorGrad)" stroke="#cbd5e1" stroke-width="3" />
+  
+  <!-- Blackboard / Front area -->
+  <rect x="180" y="25" width="240" height="14" rx="4" fill="#334155" />
+  <text x="300" y="36" font-family="Inter, sans-serif" font-size="9" fill="#f8fafc" text-anchor="middle">QUADRO / ÁREA FRONTAL</text>
+
+  <!-- Teacher's desk -->
+  <g transform="translate(100, 60)" filter="url(#deskSh)">
+    <rect width="90" height="50" rx="8" fill="#e2e8f0" stroke="#94a3b8" stroke-width="1.5" />
+    <text x="45" y="30" font-family="Inter, sans-serif" font-size="10" font-weight="600" fill="#475569" text-anchor="middle">Mesa Professor</text>
+  </g>
+
+  <!-- Point 1 Area: Rotina Visual / Mural -->
+  <g transform="translate(430, 50)" filter="url(#deskSh)">
+    <rect width="130" height="60" rx="8" fill="#fef3c7" stroke="#f59e0b" stroke-width="1.5" />
+    <text x="65" y="25" font-family="Inter, sans-serif" font-size="10" font-weight="700" fill="#92400e" text-anchor="middle">Mural de Rotinas</text>
+    <text x="65" y="42" font-family="Inter, sans-serif" font-size="9" fill="#b45309" text-anchor="middle">Previsibilidade visual</text>
+  </g>
+
+  <!-- Student Desks Group 1 -->
+  <g transform="translate(100, 140)" filter="url(#deskSh)">
+    <rect width="110" height="60" rx="8" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.5" />
+    <circle cx="35" cy="30" r="14" fill="#eff6ff" />
+    <circle cx="75" cy="30" r="14" fill="#eff6ff" />
+    <text x="55" y="52" font-family="Inter, sans-serif" font-size="9" fill="#64748b" text-anchor="middle">Mesas de Apoio</text>
+  </g>
+
+  <!-- Student Desks Group 2 -->
+  <g transform="translate(250, 140)" filter="url(#deskSh)">
+    <rect width="110" height="60" rx="8" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.5" />
+    <circle cx="35" cy="30" r="14" fill="#eff6ff" />
+    <circle cx="75" cy="30" r="14" fill="#eff6ff" />
+    <text x="55" y="52" font-family="Inter, sans-serif" font-size="9" fill="#64748b" text-anchor="middle">Trabalho em Dupla</text>
+  </g>
+
+  <!-- Point 3 Area: Sensory Regulating / Quiet Corner -->
+  <g transform="translate(410, 150)" filter="url(#deskSh)">
+    <rect width="150" height="150" rx="14" fill="#ecfdf5" stroke="#10b981" stroke-width="1.5" stroke-dasharray="4 4" />
+    <text x="75" y="35" font-family="Inter, sans-serif" font-size="11" font-weight="700" fill="#065f46" text-anchor="middle">Cantinho Regulador</text>
+    <text x="75" y="55" font-family="Inter, sans-serif" font-size="9" fill="#047857" text-anchor="middle">Menos estímulos acústicos</text>
+    <circle cx="50" cy="95" r="20" fill="#a7f3d0" />
+    <text x="50" y="100" font-size="14" text-anchor="middle">🎧</text>
+    <circle cx="100" cy="95" r="20" fill="#bae6fd" />
+    <text x="100" y="100" font-size="14" text-anchor="middle">📚</text>
+  </g>
+
+  <!-- Desks Group 3 & 4 (Back) -->
+  <g transform="translate(100, 230)" filter="url(#deskSh)">
+    <rect width="110" height="60" rx="8" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.5" />
+    <text x="55" y="35" font-family="Inter, sans-serif" font-size="9" fill="#64748b" text-anchor="middle">Espaço de Circulação</text>
+  </g>
+
+  <g transform="translate(250, 230)" filter="url(#deskSh)">
+    <rect width="110" height="60" rx="8" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.5" />
+    <text x="55" y="35" font-family="Inter, sans-serif" font-size="9" fill="#64748b" text-anchor="middle">Acessibilidade Fácil</text>
+  </g>
+
+  <!-- Door / Exit indicator -->
+  <rect x="20" y="270" width="8" height="50" fill="#94a3b8" />
+  <path d="M 28,270 A 50 50 0 0 1 78,320" fill="none" stroke="#94a3b8" stroke-dasharray="3 3" />
+  <text x="55" y="295" font-family="Inter, sans-serif" font-size="9" fill="#94a3b8">Entrada</text>
+</svg>

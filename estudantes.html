@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Estudantes – Acolher</title>
+  <link rel="stylesheet" href="assets/css/design.css" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <!-- Header Principal com Navegação e Acessibilidade -->
+  <header class="site-header" role="banner">
+    <div class="logo-wrapper">
+      <a href="index.html" class="logo" aria-label="Acolher - Página inicial">
+        <div class="logo-icon" aria-hidden="true">💙</div>
+        Acolher
+        <span>Educação</span>
+      </a>
+    </div>
+
+    <nav aria-label="Menu principal">
+      <ul class="nav-list">
+        <li><a href="index.html" class="nav-link">Início</a></li>
+        <li><a href="autismo.html" class="nav-link">Autismo</a></li>
+        <li><a href="professores.html" class="nav-link">Professores</a></li>
+        <li><a href="estudantes.html" class="nav-link active" aria-current="page">Estudantes</a></li>
+        <li><a href="index.html#saude-mental" class="nav-link">Saúde Mental</a></li>
+        <li><a href="index.html#rede-apoio" class="nav-link">Rede de Apoio</a></li>
+      </ul>
+    </nav>
+
+    <div class="accessibility-toolbar" aria-label="Barra de ferramentas de acessibilidade">
+      <button id="increase-text" aria-label="Aumentar tamanho da fonte" title="Aumentar fonte">A+</button>
+      <button id="decrease-text" aria-label="Diminuir tamanho da fonte" title="Diminuir fonte">A-</button>
+      <button id="toggle-contrast" aria-label="Alternar modo de alto contraste" title="Alto contraste">Contraste</button>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero" id="hero">
+    <div class="hero-text">
+      <span class="subtitle">ENTENDER • EXPRESSAR • PEDIR AJUDA</span>
+      <h1>Nem sempre é fácil explicar o que estamos sentindo.</h1>
+      <p class="description">A escola faz parte de uma grande parte da nossa vida. Aqui você pode entender melhor algumas situações, conhecer maneiras de comunicar o que precisa e descobrir onde procurar apoio.</p>
+      <div class="hero-buttons">
+        <a href="#como-esta" class="btn primary">Como estou me sentindo?</a>
+        <a href="#pedir-ajuda" class="btn secondary">Preciso conversar</a>
+      </div>
+    </div>
+    <div class="hero-illustration">
+      <img src="assets/img/student-illustration.svg" alt="Ilustração de apoio e escuta ao estudante" />
+    </div>
+  </section>
+
+  <!-- PAGE NAVIGATION -->
+  <nav class="section-nav" aria-label="Navegação nesta página" style="padding:1rem 2rem;background:var(--color-surface);">
+    <strong>Nesta página:</strong>
+    <ul style="display:flex;flex-wrap:wrap;gap:1rem;list-style:none;margin:0.5rem 0;">
+      <li><a href="#como-esta" class="nav-link">Como estou?</a></li>
+      <li><a href="#entendendo-emocoes" class="nav-link">Entendendo emoções</a></li>
+      <li><a href="#sobrecarga" class="nav-link">Sobrecarga</a></li>
+      <li><a href="#escola" class="nav-link">Escola</a></li>
+      <li><a href="#convivencia" class="nav-link">Convivência</a></li>
+      <li><a href="#pedir-ajuda" class="nav-link">Pedir ajuda</a></li>
+      <li><a href="#ajudar-alguem" class="nav-link">Ajudar alguém</a></li>
+      <li><a href="#minha-rede" class="nav-link">Minha rede</a></li>
+    </ul>
+  </nav>
+
+  <!-- COMO VOCÊ ESTÁ AGORA? -->
+  <section id="como-esta" class="section">
+    <h2 class="section-title">Como você está se sentindo agora?</h2>
+    <p>Não existe resposta certa. Escolha a opção que mais se aproxima do que você está sentindo neste momento.</p>
+    <div class="emotion-grid" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(120px,1fr));gap:1rem;">
+      <button class="emotion-card" data-emotion="tranquilo" aria-label="Estou tranquilo">😌<br/>Estou tranquilo</button>
+      <button class="emotion-card" data-emotion="bem" aria-label="Estou bem">🙂<br/>Estou bem</button>
+      <button class="emotion-card" data-emotion="preocupado" aria-label="Estou preocupado">😟<br/>Estou preocupado</button>
+      <button class="emotion-card" data-emotion="ansioso" aria-label="Estou ansioso">😰<br/>Estou ansioso</button>
+      <button class="emotion-card" data-emotion="triste" aria-label="Estou triste">😔<br/>Estou triste</button>
+      <button class="emotion-card" data-emotion="sobrecarga" aria-label="Estou sobrecarregado">😣<br/>Estou sobrecarregado</button>
+      <button class="emotion-card" data-emotion="irritado" aria-label="Estou irritado">😡<br/>Estou irritado</button>
+      <button class="emotion-card" data-emotion="nao-sei" aria-label="Não sei explicar">😶<br/>Não sei explicar</button>
+      <button class="emotion-card" data-emotion="preciso-conversar" aria-label="Preciso conversar">🤝<br/>Preciso conversar</button>
+    </div>
+    <div id="emotion-response" class="response-box" style="margin-top:1.5rem;padding:1rem;border:1px solid var(--color-muted);border-radius:var(--radius);display:none;">
+      <p id="response-text"></p>
+      <div id="response-actions" style="margin-top:0.5rem;"></div>
+      <small style="display:block;margin-top:0.5rem;color:var(--color-muted);">Esta ferramenta ajuda na reflexão e não realiza avaliação psicológica.</small>
+    </div>
+  </section>
+
+  <!-- ENTENDENDO AS EMOÇÕES -->
+  <section id="entendendo-emocoes" class="section">
+    <h2 class="section-title">Todas as emoções comunicam alguma coisa.</h2>
+    <p>Algumas emoções são agradáveis e outras são desconfortáveis, mas sentir tristeza, medo, preocupação, irritação ou frustração faz parte da experiência humana. O mais importante é perceber como estamos nos sentindo e quando precisamos de apoio.</p>
+    <div class="cards-grid" style="margin-top:1rem;">
+      <div class="card"><h3>Alegria</h3><p>Algo importante ou agradável aconteceu.</p></div>
+      <div class="card"><h3>Preocupação</h3><p>Existe alguma situação ocupando bastante os seus pensamentos.</p></div>
+      <div class="card"><h3>Tristeza</h3><p>Algo pode ter machucado, mudado ou sido perdido.</p></div>
+      <div class="card"><h3>Irritação</h3><p>Algo pode estar incomodando ou ultrapassando seus limites.</p></div>
+      <div class="card"><h3>Medo</h3><p>Seu corpo percebe alguma situação como ameaçadora.</p></div>
+      <div class="card"><h3>Sobrecarga</h3><p>Muitas demandas ou estímulos podem estar acontecendo ao mesmo tempo.</p></div>
+    </div>
+    <p style="margin-top:1rem;color:var(--color-muted);">Uma emoção sozinha não define sua saúde mental.</p>
+  </section>
+
+  <!-- CORPO E EMOÇÕES -->
+  <section id="corpo-emocoes" class="section">
+    <h2 class="section-title">Às vezes o corpo percebe primeiro.</h2>
+    <div style="display:flex;flex-wrap:wrap;gap:2rem;align-items:center;">
+      <img src="./assets/img/body-silhouette.svg" alt="Silhueta do corpo" style="max-width:200px;width:100%;" />
+      <ul style="list-style:none;">
+        <li>❤️ Coração acelerado</li>
+        <li>💧 Mãos suando</li>
+        <li>💪 Tensão muscular</li>
+        <li>😢 Vontade de chorar</li>
+        <li>🧠 Dificuldade para se concentrar</li>
+        <li>😴 Cansaço</li>
+        <li>⚡ Inquietação</li>
+        <li>🙈 Vontade de ficar sozinho</li>
+      </ul>
+    </div>
+    <p style="margin-top:1rem;color:var(--color-muted);">Essas sensações podem acontecer por vários motivos. Observe o contexto e converse com alguém quando elas estiverem causando sofrimento ou dificultando seu cotidiano.</p>
+  </section>
+
+  <!-- QUANDO TUDO PARECE DEMAIS -->
+  <section id="tudo-demais" class="section">
+    <h2 class="section-title">Talvez não seja uma coisa só.</h2>
+    <p>Às vezes pequenas dificuldades vão se acumulando até parecer que não conseguimos lidar com mais nada.</p>
+    <p>O que está pesando mais agora?</p>
+    <select id="peso-atual" style="padding:0.5rem;border-radius:var(--radius);border:1px solid var(--color-muted);">
+      <option value="escola">Escola</option>
+      <option value="familia">Família</option>
+      <option value="amizades">Amizades</option>
+      <option value="ambiente">Barulho/ambiente</option>
+      <option value="cobrancas">Cobranças</option>
+      <option value="cansaco">Cansaço</option>
+      <option value="nao-sei">Não sei</option>
+      <option value="outro">Outra coisa</option>
+    </select>
+    <p style="margin-top:0.5rem;color:var(--color-muted);">Não há diagnóstico aqui – apenas um ponto de partida para refletir.</p>
+  </section>
+
+  <!-- QUANDO ESTOU SOBRECARREGADO -->
+  <section id="sobrecarga" class="section">
+    <h2 class="section-title">Talvez alguma dessas coisas possa ajudar agora.</h2>
+    <ol>
+      <li><strong>Diminua um pouco o ritmo</strong> – Se for possível, faça uma pequena pausa.</li>
+      <li><strong>Procure um ambiente mais tranquilo</strong> – Principalmente quando muitos estímulos estiverem incomodando.</li>
+      <li><strong>Resolva uma coisa de cada vez</strong> – Você não precisa resolver tudo neste minuto.</li>
+      <li><strong>Comunique</strong> – Avise alguém que você não está bem.</li>
+      <li><strong>Dê tempo</strong> – Você não precisa conseguir explicar tudo imediatamente.</li>
+    </ol>
+    <p style="color:var(--color-muted);">Essas estratégias não substituem ajuda profissional quando existe sofrimento persistente ou intenso.</p>
+  </section>
+
+  <!-- COMUNICAÇÃO (PAUSA) -->
+  <section id="preciso-pausa" class="section">
+    <h2 class="section-title">Não sabe como falar?</h2>
+    <div class="cards-grid" style="margin-top:1rem;">
+      <div class="card copy-card" data-text="Preciso de uma pausa."><h3>Preciso de uma pausa.</h3><button class="btn secondary copy-btn" aria-label="Copiar frase">Copiar</button></div>
+      <div class="card copy-card" data-text="Está muito barulhento."><h3>Está muito barulhento.</h3><button class="btn secondary copy-btn" aria-label="Copiar frase">Copiar</button></div>
+      <div class="card copy-card" data-text="Não entendi a atividade."><h3>Não entendi a atividade.</h3><button class="btn secondary copy-btn" aria-label="Copiar frase">Copiar</button></div>
+      <div class="card copy-card" data-text="Pode explicar novamente?"><h3>Pode explicar novamente?</h3><button class="btn secondary copy-btn" aria-label="Copiar frase">Copiar</button></div>
+      <div class="card copy-card" data-text="Estou desconfortável."><h3>Estou desconfortável.</h3><button class="btn secondary copy-btn" aria-label="Copiar frase">Copiar</button></div>
+      <div class="card copy-card" data-text="Preciso de alguns minutos."><h3>Preciso de alguns minutos.</h3><button class="btn secondary copy-btn" aria-label="Copiar frase">Copiar</button></div>
+      <div class="card copy-card" data-text="Não consigo falar sobre isso agora."><h3>Não consigo falar sobre isso agora.</h3><button class="btn secondary copy-btn" aria-label="Copiar frase">Copiar</button></div>
+      <div class="card copy-card" data-text="Preciso conversar com alguém."><h3>Preciso conversar com alguém.</h3><button class="btn secondary copy-btn" aria-label="Copiar frase">Copiar</button></div>
+    </div>
+    <small style="display:block;margin-top:0.5rem;color:var(--color-muted);">No futuro esses cartões poderão ser usados como ferramenta independente.</small>
+  </section>
+
+  <!-- ESCOLA DIFÍCIL -->
+  <section id="escola" class="section">
+    <h2 class="section-title">Nem toda dificuldade significa que você não consegue aprender.</h2>
+    <ul>
+      <li><button class="accordion-toggle btn secondary" data-id="dificuldade-materia">Não consigo acompanhar a matéria.</button></li>
+      <li><button class="accordion-toggle btn secondary" data-id="medo-apresentacao">Tenho medo de apresentar trabalho.</button></li>
+      <li><button class="accordion-toggle btn secondary" data-id="concentracao">Não consigo me concentrar.</button></li>
+      <li><button class="accordion-toggle btn secondary" data-id="atividade-grupo">Tenho dificuldade em atividades em grupo.</button></li>
+      <li><button class="accordion-toggle btn secondary" data-id="ambiente-incomodando">O ambiente está me incomodando.</button></li>
+      <li><button class="accordion-toggle btn secondary" data-id="acumulando-atividades">Estou acumulando atividades.</button></li>
+      <li><button class="accordion-toggle btn secondary" data-id="medo-ajuda">Tenho medo de pedir ajuda.</button></li>
+    </ul>
+    <div id="accordion-content" style="margin-top:1rem;padding:1rem;border:1px solid var(--color-muted);border-radius:var(--radius);display:none;"></div>
+  </section>
+
+  <!-- EXEMPLO – MATÉRIA -->
+  <section id="exemplo-materia" class="section">
+    <h2 class="section-title">Exemplo – Não entendi a matéria</h2>
+    <p><strong>PENSAMENTO:</strong> "Todo mundo entendeu menos eu."</p>
+    <p><strong>REFORMULAR:</strong> "Talvez eu precise que expliquem de outra maneira."</p>
+    <ul>
+      <li>Perguntar ao professor</li>
+      <li>Pedir outro exemplo</li>
+      <li>Dividir o conteúdo em partes</li>
+      <li>Estudar com um colega</li>
+      <li>Identificar exatamente onde começou a dificuldade</li>
+    </ul>
+    <p>Precisar de outra explicação não significa incapacidade.</p>
+  </section>
+
+  <!-- EXEMPLO – APRESENTAÇÃO -->
+  <section id="exemplo-apresentacao" class="section">
+    <h2 class="section-title">Exemplo – Apresentação</h2>
+    <p><strong>Situação:</strong> "Tenho muita dificuldade para apresentar trabalhos."</p>
+    <ul>
+      <li>Falar diante da turma</li>
+      <li>Esquecer o conteúdo</li>
+      <li>Ser julgado</li>
+      <li>Muito barulho</li>
+      <li>Não saber como começar</li>
+    </ul>
+    <ul>
+      <li>Organizar tópicos</li>
+      <li>Ensaiar</li>
+      <li>Conversar previamente com o professor</li>
+      <li>Utilizar apoio visual</li>
+      <li>Compreender exatamente como será a apresentação</li>
+    </ul>
+    <p>Precisar de outra explicação não significa incapacidade.</p>
+  </section>
+
+  <!-- CONVIVÊNCIA -->
+  <section id="convivencia" class="section">
+    <h2 class="section-title">A escola também é feita de relações.</h2>
+    <ul>
+      <li><button class="accordion-toggle btn secondary" data-id="excluido">Estou me sentindo excluído.</button></li>
+      <li><button class="accordion-toggle btn secondary" data-id="briga-amigo">Briguei com um amigo.</button></li>
+      <li><button class="accordion-toggle btn secondary" data-id="brincadeira-machuca">Fizeram uma brincadeira que me machucou.</button></li>
+      <li><button class="accordion-toggle btn secondary" data-id="dificuldade-amigos">Tenho dificuldade para fazer amigos.</button></li>
+      <li><button class="accordion-toggle btn secondary" data-id="pressao-grupo">Estou sendo pressionado pelo grupo.</button></li>
+      <li><button class="accordion-toggle btn secondary" data-id="rede-social">Algo aconteceu nas redes sociais.</button></li>
+    </ul>
+    <div id="convivencia-content" style="margin-top:1rem;padding:1rem;border:1px solid var(--color-muted);border-radius:var(--radius);display:none;"></div>
+  </section>
+
+  <!-- MINHA REDE (tool) -->
+  <section id="minha-rede" class="section">
+    <h2 class="section-title">Quem faz parte da sua rede?</h2>
+    <div style="display:flex;flex-direction:column;gap:0.5rem;">
+      <label>Quando não estou bem, posso conversar com:</label>
+      <input type="text" id="rede-pessoal" placeholder="Ex.: Amigo, irmão..." style="padding:0.5rem;border-radius:var(--radius);border:1px solid var(--color-muted);" />
+      <label>Na escola, posso procurar:</label>
+      <input type="text" id="rede-escola" placeholder="Ex.: Professor, coordenador..." style="padding:0.5rem;border-radius:var(--radius);border:1px solid var(--color-muted);" />
+      <label>Fora da escola, posso procurar:</label>
+      <input type="text" id="rede-externa" placeholder="Ex.: Psicólogo, família..." style="padding:0.5rem;border-radius:var(--radius);border:1px solid var(--color-muted);" />
+      <label>Algo que costuma me ajudar:</label>
+      <input type="text" id="ajuda-que-funciona" placeholder="Ex.: Caminhada, música..." style="padding:0.5rem;border-radius:var(--radius);border:1px solid var(--color-muted);" />
+      <label>Algo que costuma piorar a situação:</label>
+      <input type="text" id="piora-situacao" placeholder="Ex.: Muito barulho..." style="padding:0.5rem;border-radius:var(--radius);border:1px solid var(--color-muted);" />
+      <button class="btn primary" id="save-plan" style="margin-top:0.5rem;">Salvar no navegador</button>
+      <small style="color:var(--color-muted);">Estas informações ficam somente neste dispositivo.</small>
+    </div>
+  </section>
+
+  <footer class="site-footer" role="contentinfo">
+    <div class="footer-grid">
+      <div class="footer-section">
+        <h3>Acolher</h3>
+        <p>Projeto acadêmico sobre tecnologia educacional voltado à inclusão, autismo e acolhimento da saúde mental no ambiente escolar.</p>
+      </div>
+
+      <div class="footer-section">
+        <h3>Conteúdos</h3>
+        <ul>
+          <li><a href="autismo.html">Guia sobre Autismo</a></li>
+          <li><a href="professores.html">Guia para Professores</a></li>
+          <li><a href="estudantes.html">Espaço do Estudante</a></li>
+          <li><a href="index.html#saude-mental">Saúde Mental</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-section">
+        <h3>Para Navegar</h3>
+        <ul>
+          <li><a href="index.html">Página Inicial</a></li>
+          <li><a href="index.html#situacoes-cotidiano">Situações do cotidiano</a></li>
+          <li><a href="index.html#rede-apoio">Rede de apoio</a></li>
+          <li><a href="index.html#fontes">Fontes e referências</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-section">
+        <h3>Compromisso</h3>
+        <p style="font-size: 0.85rem; color: var(--text-light);">
+          Comprometido com a acessibilidade web, linguagem acolhedora e respeito às emoções dos estudantes.
+        </p>
+      </div>
+    </div>
+
+    <p class="footer-disclaimer">
+      Este portal possui finalidade exclusivamente educativa e informativa. Não substitui avaliação, diagnóstico ou acompanhamento especializado realizado por profissionais de saúde e educação.
+    </p>
+  </footer>
+
+  <script src="./assets/js/script.js"></script>
+  <script>
+    // Emotion selector logic
+    const emotionCards = document.querySelectorAll('.emotion-card');
+    const responseBox = document.getElementById('emotion-response');
+    const responseText = document.getElementById('response-text');
+    const responseActions = document.getElementById('response-actions');
+    const emotionResponses = {
+      tranquilo: {text: "Que bom que este momento está mais tranquilo. Perceber quando estamos bem também é importante.", actions: []},
+      bem: {text: "É ótimo estar bem! Continue cuidando de si.", actions: []},
+      preocupado: {text: "Às vezes nossa mente fica presa em algo que pode acontecer ou em alguma situação que estamos enfrentando.", actions: [{label: 'Quero entender melhor', link: '#entendendo-emocoes'}, {label: 'Quero conversar com alguém', link: '#preciso-conversar'}]},
+      ansioso: {text: "É normal sentir ansiedade em algumas situações. Observe o que está gerando esse sentimento.", actions: []},
+      triste: {text: "Sentir tristeza faz parte da vida. Permita-se sentir e, se precisar, converse com alguém de confiança.", actions: []},
+      sobrecarga: {text: "Talvez muitas coisas estejam acontecendo ao mesmo tempo. Você pode tentar diminuir os estímulos ao seu redor, fazer uma pausa quando for possível e avisar alguém de confiança que precisa de ajuda.", actions: []},
+      irritado: {text: "É natural ficar irritado quando algo nos incomoda. Tente identificar o que está gerando essa sensação.", actions: []},
+      "nao-sei": {text: "Está tudo bem não conseguir encontrar uma palavra agora. Você pode começar simplesmente dizendo: 'Eu não sei explicar, mas não estou me sentindo bem.'", actions: []},
+      "preciso-conversar": {text: "Procurar alguém não significa que você precisa saber exatamente o que dizer.", actions: [{label: 'Veja como começar uma conversa', link: '#preciso-conversar'}]}
+    };
+    emotionCards.forEach(card => {
+      card.addEventListener('click', () => {
+        const emo = card.dataset.emotion;
+        const data = emotionResponses[emo];
+        responseText.textContent = data.text;
+        responseActions.innerHTML = '';
+        if (data.actions) {
+          data.actions.forEach(a => {
+            const btn = document.createElement('a');
+            btn.href = a.link;
+            btn.className = 'btn secondary';
+            btn.textContent = a.label;
+            responseActions.appendChild(btn);
+          });
+        }
+        responseBox.style.display = 'block';
+        responseBox.scrollIntoView({behavior: 'smooth'});
+      });
+    });
+    // Copy cards
+    document.querySelectorAll('.copy-btn').forEach(b => {
+      b.addEventListener('click', e => {
+        const card = e.target.closest('.copy-card');
+        const txt = card.dataset.text;
+        navigator.clipboard.writeText(txt).then(() => {
+          const orig = b.textContent;
+          b.textContent = 'Copiado!';
+          setTimeout(() => b.textContent = orig, 1500);
+        });
+      });
+    });
+    // Accordion logic
+    const accordionData = {
+      'dificuldade-materia': 'Dica: peça ao professor para explicar de outra forma, peça exemplos adicionais ou estude com um colega.',
+      'medo-apresentacao': 'Dica: ensaie em voz alta, converse com o professor sobre estratégias e use recursos visuais.',
+      'concentracao': 'Dica: procure um local silencioso, faça pausas curtas e organize a tarefa em etapas.',
+      'atividade-grupo': 'Dica: comunique ao grupo como prefere trabalhar, peça papéis claros e procure apoio do professor se necessário.',
+      'ambiente-incomodando': 'Dica: ajuste sua área de trabalho, use fones de proteção ou peça permissão para mudar o ambiente.',
+      'acumulando-atividades': 'Dica: faça uma lista, priorize tarefas e peça ajuda para dividir o trabalho.',
+      'medo-ajuda': 'Dica: lembre-se que pedir ajuda é sinal de força. Escolha um adulto de confiança para conversar.',
+      'excluido': 'Converse com a pessoa, procure outro grupo ou peça apoio ao professor.',
+      'briga-amigo': 'Respire, peça um tempo, converse calmamente ou peça mediação de um adulto.',
+      'brincadeira-machuca': 'Informe a situação a um adulto de confiança e peça que a situação seja resolvida.',
+      'dificuldade-amigos': 'Procure grupos de interesse comum, participe de atividades e peça ajuda ao orientador.',
+      'pressao-grupo': 'Defina limites claros, diga "não" quando necessário e converse com um adulto se a pressão continuar.',
+      'rede-social': 'Desconecte se precisar, bloqueie usuários agressivos e procure apoio de um adulto.'
+    };
+    document.querySelectorAll('.accordion-toggle').forEach(b => {
+      b.addEventListener('click', () => {
+        const id = b.dataset.id;
+        const container = b.closest('section').querySelector('#accordion-content, #convivencia-content');
+        if (container) {
+          container.textContent = accordionData[id] || 'Informação ainda não disponível.';
+          container.style.display = 'block';
+          container.scrollIntoView({behavior: 'smooth'});
+        }
+      });
+    });
+    // Save plan logic
+    const saveBtn = document.getElementById('save-plan');
+    saveBtn.addEventListener('click', () => {
+      const plan = {
+        pessoal: document.getElementById('rede-pessoal').value,
+        escola: document.getElementById('rede-escola').value,
+        externa: document.getElementById('rede-externa').value,
+        ajuda: document.getElementById('ajuda-que-funciona').value,
+        piora: document.getElementById('piora-situacao').value
+      };
+      localStorage.setItem('estudante-plan', JSON.stringify(plan));
+      saveBtn.textContent = 'Salvo!';
+      setTimeout(() => saveBtn.textContent = 'Salvar no navegador', 1500);
+    });
+    // Load saved plan on page load
+    window.addEventListener('load', () => {
+      const saved = JSON.parse(localStorage.getItem('estudante-plan')||'{}');
+      if (saved.pessoal) document.getElementById('rede-pessoal').value = saved.pessoal;
+      if (saved.escola) document.getElementById('rede-escola').value = saved.escola;
+      if (saved.externa) document.getElementById('rede-externa').value = saved.externa;
+      if (saved.ajuda) document.getElementById('ajuda-que-funciona').value = saved.ajuda;
+      if (saved.piora) document.getElementById('piora-situacao').value = saved.piora;
+    });
+  </script>
+</body>
+</html>

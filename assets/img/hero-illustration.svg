@@ -1,0 +1,84 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 380" width="100%" height="100%" role="img" aria-label="Ilustração de acolhimento escolar">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#eff6ff" />
+      <stop offset="100%" stop-color="#ccfbf1" />
+    </linearGradient>
+    <linearGradient id="blueGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#3b82f6" />
+      <stop offset="100%" stop-color="#1d4ed8" />
+    </linearGradient>
+    <linearGradient id="tealGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#14b8a6" />
+      <stop offset="100%" stop-color="#0f766e" />
+    </linearGradient>
+    <linearGradient id="warmGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fbbf24" />
+      <stop offset="100%" stop-color="#f59e0b" />
+    </linearGradient>
+    <filter id="softShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#0f172a" flood-opacity="0.08" />
+    </filter>
+  </defs>
+
+  <!-- Background organic blob -->
+  <path d="M 40,180 C 20,80 140,20 260,30 C 380,40 480,100 460,220 C 440,320 340,360 220,360 C 100,360 60,280 40,180 Z" fill="url(#bgGrad)" />
+
+  <!-- Back floating decorative elements -->
+  <circle cx="80" cy="70" r="16" fill="#60a5fa" opacity="0.4" />
+  <circle cx="430" cy="90" r="22" fill="#2dd4bf" opacity="0.35" />
+  <circle cx="390" cy="300" r="12" fill="#fbbf24" opacity="0.5" />
+  
+  <!-- Dialogue bubble left (listening) -->
+  <g transform="translate(60, 110)" filter="url(#softShadow)">
+    <rect width="110" height="60" rx="16" fill="#ffffff" />
+    <path d="M 40,60 L 50,72 L 60,60 Z" fill="#ffffff" />
+    <circle cx="35" cy="30" r="5" fill="#3b82f6" />
+    <circle cx="55" cy="30" r="5" fill="#14b8a6" />
+    <circle cx="75" cy="30" r="5" fill="#f59e0b" />
+  </g>
+
+  <!-- Central Card: School / Community Bridge -->
+  <g transform="translate(140, 70)" filter="url(#softShadow)">
+    <!-- Base card -->
+    <rect width="220" height="230" rx="24" fill="#ffffff" />
+    
+    <!-- Top banner / header of card -->
+    <rect width="220" height="56" rx="24" fill="url(#blueGrad)" />
+    <rect y="32" width="220" height="24" fill="url(#blueGrad)" />
+    
+    <!-- Empathy Heart & Hand symbol -->
+    <circle cx="110" cy="46" r="24" fill="#ffffff" />
+    <path d="M 110,40 C 108,35 102,34 99,37 C 95,41 97,47 110,56 C 123,47 125,41 121,37 C 118,34 112,35 110,40 Z" fill="#ef4444" />
+    
+    <!-- Inclusive students & educator stylized silhouettes -->
+    <!-- Student 1 -->
+    <circle cx="65" cy="115" r="14" fill="#cbd5e1" />
+    <path d="M 45,155 C 45,135 85,135 85,155 Z" fill="url(#blueGrad)" />
+    
+    <!-- Educator center -->
+    <circle cx="110" cy="105" r="16" fill="#fde68a" />
+    <path d="M 85,155 C 85,130 135,130 135,155 Z" fill="url(#tealGrad)" />
+    
+    <!-- Student 2 -->
+    <circle cx="155" cy="115" r="14" fill="#fed7aa" />
+    <path d="M 135,155 C 135,135 175,135 175,155 Z" fill="url(#warmGrad)" />
+
+    <!-- Open book / Knowledge base -->
+    <path d="M 70,195 Q 110,185 110,205 Q 110,185 150,195 L 148,205 Q 110,196 110,214 Q 110,196 72,205 Z" fill="#64748b" />
+    <line x1="80" y1="216" x2="140" y2="216" stroke="#94a3b8" stroke-width="2" stroke-linecap="round" />
+  </g>
+
+  <!-- Right Floating Badge: "Acolhimento & Escuta" -->
+  <g transform="translate(320, 200)" filter="url(#softShadow)">
+    <rect width="130" height="52" rx="14" fill="#ffffff" />
+    <circle cx="28" cy="26" r="14" fill="#ecfdf5" />
+    <path d="M 23,26 L 27,30 L 34,22" fill="none" stroke="#059669" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
+    <text x="50" y="24" font-family="Inter, sans-serif" font-size="11" font-weight="700" fill="#0f172a">Ambiente</text>
+    <text x="50" y="38" font-family="Inter, sans-serif" font-size="10" font-weight="500" fill="#059669">Inclusivo</text>
+  </g>
+
+  <!-- Sparkles -->
+  <polygon points="120,40 123,47 130,50 123,53 120,60 117,53 110,50 117,47" fill="#f59e0b" opacity="0.8" transform="translate(250, -20) scale(0.7)" />
+  <polygon points="120,40 123,47 130,50 123,53 120,60 117,53 110,50 117,47" fill="#3b82f6" opacity="0.7" transform="translate(-50, 180) scale(0.6)" />
+</svg>

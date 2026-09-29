@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Autismo – Acolher</title>
+  <link rel="stylesheet" href="assets/css/design.css" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Header Principal com Navegação e Acessibilidade -->
+  <header class="site-header" role="banner">
+    <div class="logo-wrapper">
+      <a href="index.html" class="logo" aria-label="Acolher - Página inicial">
+        <div class="logo-icon" aria-hidden="true">💙</div>
+        Acolher
+        <span>Educação</span>
+      </a>
+    </div>
+
+    <nav aria-label="Menu principal">
+      <ul class="nav-list">
+        <li><a href="index.html" class="nav-link">Início</a></li>
+        <li><a href="autismo.html" class="nav-link active" aria-current="page">Autismo</a></li>
+        <li><a href="professores.html" class="nav-link">Professores</a></li>
+        <li><a href="estudantes.html" class="nav-link">Estudantes</a></li>
+        <li><a href="index.html#saude-mental" class="nav-link">Saúde Mental</a></li>
+        <li><a href="index.html#rede-apoio" class="nav-link">Rede de Apoio</a></li>
+      </ul>
+    </nav>
+
+    <div class="accessibility-toolbar" aria-label="Barra de ferramentas de acessibilidade">
+      <button id="increase-text" aria-label="Aumentar tamanho da fonte" title="Aumentar fonte">A+</button>
+      <button id="decrease-text" aria-label="Diminuir tamanho da fonte" title="Diminuir fonte">A-</button>
+      <button id="toggle-contrast" aria-label="Alternar modo de alto contraste" title="Alto contraste">Contraste</button>
+    </div>
+  </header>
+
+  <!-- Hero specific for Autismo -->
+  <section class="hero hero-autismo" id="hero-autismo">
+    <div class="hero-text">
+      <p class="subtitle">CONHECER • COMPREENDER • INCLUIR</p>
+      <h1>Entender o autismo ajuda a construir uma escola mais inclusiva.</h1>
+      <p class="description">O autismo pode se manifestar de maneiras diferentes em cada pessoa. Conhecer essas diferenças é um passo importante para compreender, acolher e reduzir barreiras no ambiente escolar.</p>
+      <p class="continue-indicator">Continue explorando ↓</p>
+    </div>
+    <div class="hero-illustration" aria-hidden="true">
+      <img src="assets/img/autismo-hero.svg" alt="Ilustração representando diversidade e ambiente escolar" />
+    </div>
+  </section>
+
+  <!-- Small intra‑page navigation -->
+  <nav class="page-nav" aria-label="Navegação interna da página Autismo">
+    <ul>
+      <li><a href="#o-que-e">O que é autismo?</a></li>
+      <li><a href="#comunicacao">Comunicação</a></li>
+      <li><a href="#sensorialidade">Sensorialidade</a></li>
+      <li><a href="#rotina">Rotina</a></li>
+      <li><a href="#na-escola">Autismo na escola</a></li>
+      <li><a href="#mitos">Mitos e verdades</a></li>
+      <li><a href="#acolher">Como acolher?</a></li>
+    </ul>
+  </nav>
+
+  <!-- 1. O que é autismo? -->
+  <section class="section" id="o-que-e">
+    <h2>O que é o Transtorno do Espectro Autista?</h2>
+    <p class="lead">O Transtorno do Espectro Autista (TEA) é uma condição do neurodesenvolvimento relacionada à comunicação e à interação social e que pode envolver padrões repetitivos de comportamento, interesses específicos e diferentes formas de perceber estímulos e situações.</p>
+    <p>As características, habilidades e necessidades são diferentes em cada pessoa. Por isso, compreender o indivíduo é mais importante do que esperar que todas as pessoas autistas apresentem os mesmos comportamentos.</p>
+    <div class="grid-4cols">
+      <div class="info-box"><strong>Comunicação</strong></div>
+      <div class="info-box"><strong>Interação Social</strong></div>
+      <div class="info-box"><strong>Comportamentos e Interesses</strong></div>
+      <div class="info-box"><strong>Processamento Sensorial</strong></div>
+    </div>
+    <blockquote class="highlight">
+      <p>Autismo não define toda a pessoa.</p>
+      <p>Cada estudante possui personalidade, interesses, habilidades, dificuldades e formas próprias de aprender e se comunicar.</p>
+    </blockquote>
+  </section>
+
+  <!-- 2. Por que se chama "espectro"? -->
+  <section class="section" id="espectro">
+    <h2>Por que usamos a palavra espectro?</h2>
+    <p>O termo espectro ajuda a representar a diversidade existente entre as pessoas autistas. Características e necessidades de apoio podem variar significativamente de uma pessoa para outra.</p>
+    <div class="espectro-visual">
+      <div class="dimension">
+        <span class="dim-label">Comunicação</span>
+        <div class="dim-bar"><span class="dot" style="left:20%;"></span></div>
+      </div>
+      <div class="dimension">
+        <span class="dim-label">Sensorialidade</span>
+        <div class="dim-bar"><span class="dot" style="left:70%;"></span></div>
+      </div>
+      <div class="dimension">
+        <span class="dim-label">Interação</span>
+        <div class="dim-bar"><span class="dot" style="left:45%;"></span></div>
+      </div>
+      <div class="dimension">
+        <span class="dim-label">Autonomia</span>
+        <div class="dim-bar"><span class="dot" style="left:30%;"></span></div>
+      </div>
+      <div class="dimension">
+        <span class="dim-label">Previsibilidade</span>
+        <div class="dim-bar"><span class="dot" style="left:80%;"></span></div>
+      </div>
+      <div class="dimension">
+        <span class="dim-label">Interesses</span>
+        <div class="dim-bar"><span class="dot" style="left:55%;"></span></div>
+      </div>
+    </div>
+    <blockquote class="highlight">
+      <p>Conhecer uma pessoa autista não significa conhecer todas.</p>
+    </blockquote>
+  </section>
+
+  <!-- 3. Formas diferentes de comunicação -->
+  <section class="section" id="comunicacao">
+    <h2>Comunicar não acontece de uma única maneira</h2>
+    <p>Algumas pessoas autistas podem encontrar dificuldades em determinadas situações de comunicação e interação. As necessidades variam de pessoa para pessoa.</p>
+    <ul class="list-with-icons">
+      <li>📣 Dificuldade para iniciar ou manter determinadas conversas;</li>
+      <li>🗒️ Necessidade de instruções mais claras e objetivas;</li>
+      <li>😐 Diferentes maneiras de expressar emoções ou desconforto;</li>
+      <li>🤝 Dificuldade para compreender determinadas situações sociais;</li>
+      <li>💬 Preferência por outras formas de comunicação em algumas situações.</li>
+    </ul>
+    <div class="highlight-box">
+      <h3>Na escola</h3>
+      <p>Em vez de presumir que o estudante não entendeu, não está interessado ou não quer participar, procure descobrir qual forma de comunicação funciona melhor para ele.</p>
+      <p>Exemplo de abordagem acolhedora:</p>
+      <blockquote>"Vou explicar novamente de outra maneira."</blockquote>
+    </div>
+  </section>
+
+  <!-- 4. Processamento sensorial -->
+  <section class="section" id="sensorialidade">
+    <h2>O ambiente também pode ser sentido de maneiras diferentes</h2>
+    <p>Algumas pessoas autistas podem apresentar maior ou menor sensibilidade a determinados estímulos. Sons, luzes, texturas, cheiros, movimentos ou contato físico podem ser percebidos de maneira diferente.</p>
+    <div class="sensor-grid">
+      <div class="sensor-card">
+        <h4>SOM</h4>
+        <p>Conversas simultâneas, sinal da escola, cadeiras arrastando.</p>
+      </div>
+      <div class="sensor-card">
+        <h4>LUZ</h4>
+        <p>Luzes muito intensas ou ambientes específicos.</p>
+      </div>
+      <div class="sensor-card">
+        <h4>TOQUE</h4>
+        <p>Contato inesperado ou determinadas texturas.</p>
+      </div>
+      <div class="sensor-card">
+        <h4>CHEIRO</h4>
+        <p>Perfumes ou odores intensos.</p>
+      </div>
+      <div class="sensor-card">
+        <h4>MOVIMENTO / AMBIENTE</h4>
+        <p>Lugares muito movimentados ou com muitos estímulos simultâneos.</p>
+      </div>
+    </div>
+    <div class="box-illustration">
+      <p><em>Imagine tentar realizar uma atividade enquanto vários estímulos competem pela sua atenção.</em></p>
+    </div>
+    <p>Quando um estudante demonstra desconforto, tente identificar o que no ambiente pode estar contribuindo para aquela situação.</p>
+  </section>
+
+  <!-- 5. Rotina e previsibilidade -->
+  <section class="section" id="rotina">
+    <h2>Por que a previsibilidade pode ajudar?</h2>
+    <p>Algumas pessoas autistas podem apresentar dificuldade diante de mudanças inesperadas ou transições entre atividades. Saber previamente o que acontecerá pode tornar determinadas situações mais previsíveis.</p>
+    <div class="timeline">
+      <div class="timeline-item"><span class="time">08:00</span> Entrada</div>
+      <div class="timeline-item"><span class="time">08:15</span> Aula</div>
+      <div class="timeline-item"><span class="time">09:30</span> Atividade</div>
+      <div class="timeline-item"><span class="time">10:00</span> Intervalo</div>
+      <div class="timeline-item"><span class="time">10:30</span> Aula</div>
+      <div class="timeline-item"><span class="time">12:00</span> Saída</div>
+    </div>
+    <p class="change-example"><strong>Mudança hoje:</strong> 10:30 — Aula de matemática foi substituída por uma apresentação.</p>
+    <blockquote class="highlight">
+      <p>Quando possível, comunicar mudanças antecipadamente pode ajudar o estudante a compreender o que acontecerá.</p>
+    </blockquote>
+  </section>
+
+  <!-- 6. Interesses e comportamentos -->
+  <section class="section" id="interesses">
+    <h2>Interesses também podem ser caminhos para aprender</h2>
+    <p>Algumas pessoas autistas podem demonstrar interesses específicos ou intensos por determinados assuntos.</p>
+    <div class="example-box">
+      <p>Se um estudante demonstra grande interesse por <strong>astronomia</strong>, esse interesse pode ser utilizado em:</p>
+      <ul>
+        <li>exemplos matemáticos;</li>
+        <li>leitura;</li>
+        <li>produção textual;</li>
+        <li>atividades de pesquisa.</li>
+      </ul>
+    </div>
+    <p>O objetivo não é transformar todo conteúdo escolar no interesse do estudante, mas reconhecer que seus interesses também podem contribuir para engajamento e aprendizagem.</p>
+  </section>
+
+  <!-- 7. Autismo na escola -->
+  <section class="section" id="na-escola">
+    <h2>Inclusão não é apenas estar dentro da sala</h2>
+    <p>A participação do estudante também depende das barreiras existentes no ambiente escolar e das estratégias utilizadas para favorecer aprendizagem, comunicação e participação.</p>
+    <div class="grid-2cols barrier-grid">
+      <div class="barrier-item">
+        <h4>Barreira</h4>
+        <p>Ambiente excessivamente barulhento</p>
+        <h4>Possível estratégia</h4>
+        <p>Identificar alternativas para reduzir estímulos quando necessário.</p>
+      </div>
+      <div class="barrier-item">
+        <h4>Barreira</h4>
+        <p>Instruções muito extensas</p>
+        <h4>Possível estratégia</h4>
+        <p>Dividir a atividade em etapas menores.</p>
+      </div>
+      <div class="barrier-item">
+        <h4>Barreira</h4>
+        <p>Mudança inesperada</p>
+        <h4>Possível estratégia</h4>
+        <p>Avisar e explicar antecipadamente quando possível.</p>
+      </div>
+      <div class="barrier-item">
+        <h4>Barreira</h4>
+        <p>Dificuldade para comunicar desconforto</p>
+        <h4>Possível estratégia</h4>
+        <p>Combinar formas alternativas para o estudante pedir ajuda.</p>
+      </div>
+      <div class="barrier-item">
+        <h4>Barreira</h4>
+        <p>Exposição diante da turma</p>
+        <h4>Possível estratégia</h4>
+        <p>Conversar de maneira reservada quando apropriado.</p>
+      </div>
+    </div>
+    <blockquote class="highlight">
+      <p>Antes de perguntar "o que há de errado com este aluno?", podemos perguntar "qual barreira está dificultando sua participação?"</p>
+    </blockquote>
+  </section>
+
+  <!-- 8. Uma situação, diferentes explicações -->
+  <section class="section" id="situacoes">
+    <h2>Nem todo comportamento significa a mesma coisa</h2>
+    <div class="case-study">
+      <h3>Estudante coloca as mãos nos ouvidos durante a aula</h3>
+      <p>Possíveis contextos:</p>
+      <ul>
+        <li>Ambiente muito barulhento;</li>
+        <li>Som específico causando desconforto;</li>
+        <li>Estudante sobrecarregado;</li>
+        <li>Outra razão ainda desconhecida.</li>
+      </ul>
+      <p>Conclusão: Observe, converse e procure compreender antes de tirar conclusões.</p>
+    </div>
+    <div class="case-study">
+      <h3>Estudante não participou da atividade em grupo</h3>
+      <p>Possíveis razões:</p>
+      <ul>
+        <li>Não compreendeu a dinâmica;</li>
+        <li>Estava desconfortável;</li>
+        <li>Tinha dificuldade para iniciar a interação;</li>
+        <li>Precisava de mais tempo;</li>
+        <li>Outro motivo.</li>
+      </ul>
+      <p>Mensagem: Comportamento é informação, mas precisa de contexto.</p>
+    </div>
+  </section>
+
+  <!-- 9. Mitos e verdades accordion -->
+  <section class="section" id="mitos">
+    <h2>Mitos e informações importantes</h2>
+    <div class="accordion">
+      <div class="accordion-item">
+        <button class="accordion-title" aria-expanded="false">Todas as pessoas autistas são iguais</button>
+        <div class="accordion-content"><strong>MITO.</strong> O espectro é diverso. Características, habilidades e necessidades variam entre as pessoas.</div>
+      </div>
+      <div class="accordion-item">
+        <button class="accordion-title" aria-expanded="false">Uma característica isolada confirma autismo</button>
+        <div class="accordion-content"><strong>MITO.</strong> A presença de uma característica isolada não estabelece diagnóstico. A avaliação do TEA é realizada por profissionais qualificados.</div>
+      </div>
+      <div class="accordion-item">
+        <button class="accordion-title" aria-expanded="false">Pessoas autistas podem aprender e desenvolver novas habilidades</button>
+        <div class="accordion-content"><strong>VERDADE.</strong> Com apoio adequado e considerando necessidades individuais, pessoas autistas podem desenvolver habilidades e ampliar sua autonomia.</div>
+      </div>
+      <div class="accordion-item">
+        <button class="accordion-title" aria-expanded="false">Vacinas causam autismo</button>
+        <div class="accordion-content"><strong>MITO.</strong> Não há evidência científica de que vacinas causem autismo.</div>
+      </div>
+      <div class="accordion-item">
+        <button class="accordion-title" aria-expanded="false">Todas as pessoas autistas precisam do mesmo tipo de apoio</button>
+        <div class="accordion-content"><strong>MITO.</strong> As necessidades são individuais e podem mudar ao longo da vida.</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 10. Como posso acolher? checklist -->
+  <section class="section" id="acolher">
+    <h2>Compreender é importante. Acolher também.</h2>
+    <ul class="checklist">
+      <li>✓ Escute o estudante.</li>
+      <li>✓ Pergunte como você pode ajudar.</li>
+      <li>✓ Utilize comunicação clara.</li>
+      <li>✓ Evite constrangê-lo diante de outras pessoas.</li>
+      <li>✓ Respeite formas diferentes de comunicação.</li>
+      <li>✓ Observe possíveis estímulos desconfortáveis.</li>
+      <li>✓ Antecipe mudanças quando possível.</li>
+      <li>✓ Considere necessidades individuais.</li>
+      <li>✓ Trabalhe junto à família e à equipe escolar quando necessário.</li>
+    </ul>
+    <blockquote class="highlight">
+      <p>Não existe uma estratégia única que funcione para todas as pessoas autistas.</p>
+    </blockquote>
+  </section>
+
+  <!-- 11. Professor não faz diagnóstico -->
+  <section class="section" id="naodiagnostico">
+    <h2>Observar é diferente de diagnosticar</h2>
+    <p>Professores convivem diariamente com os estudantes e podem perceber mudanças, dificuldades e necessidades importantes. Essas observações podem contribuir para o diálogo com a família e com profissionais responsáveis, mas não substituem uma avaliação realizada por profissionais qualificados.</p>
+    <div class="flow-diagram">
+      <span>OBSERVAR</span> → <span>REGISTRAR</span> → <span>CONVERSAR</span> → <span>ORIENTAR A BUSCA POR APOIO</span>
+    </div>
+  </section>
+
+  <!-- 12. Quando procurar orientação? -->
+  <section class="section" id="orientacao">
+    <h2>Quando existe uma preocupação, procurar orientação é importante</h2>
+    <p>Quando familiares ou responsáveis percebem características ou dificuldades relacionadas ao desenvolvimento, comunicação, comportamento ou interação, podem procurar orientação profissional.</p>
+    <p>No SUS, a Unidade Básica de Saúde (UBS) é uma das principais portas de entrada para avaliação e acompanhamento.</p>
+    <a href="index.html#rede-apoio" class="btn primary">Conhecer formas de buscar ajuda →</a>
+  </section>
+
+  <!-- 13. Aviso educativo -->
+  <section class="section" id="aviso">
+    <div class="alert-box">
+      <strong>Informação não é diagnóstico.</strong>
+      <p>O conteúdo do Acolher possui finalidade educativa. As informações apresentadas aqui não devem ser utilizadas para diagnosticar uma pessoa ou substituir avaliação e acompanhamento profissional.</p>
+    </div>
+  </section>
+
+  <!-- 14. Fontes -->
+  <section class="section" id="fontes">
+    <h2>De onde vêm essas informações?</h2>
+    <p>O Acolher prioriza materiais de instituições públicas e organizações reconhecidas para produzir seus conteúdos educativos.</p>
+    <div class="cards-grid small">
+      <article class="card small">
+        <h4>Ministério da Saúde</h4>
+        <p><a href="#" target="_blank">Ver fonte</a></p>
+      </article>
+      <article class="card small">
+        <h4>Organização Mundial da Saúde (OMS)</h4>
+        <p><a href="#" target="_blank">Ver fonte</a></p>
+      </article>
+      <article class="card small">
+        <h4>Ministério da Educação / INEP</h4>
+        <p><a href="#" target="_blank">Ver fonte</a></p>
+      </article>
+      <article class="card small">
+        <h4>UNICEF</h4>
+        <p><a href="#" target="_blank">Ver fonte</a></p>
+      </article>
+    </div>
+  </section>
+
+  <footer class="site-footer" aria-label="Rodapé">
+    <div class="footer-grid">
+      <div class="footer-section">
+        <h3>Acolher</h3>
+        <p>Plataforma de apoio educacional focada em inclusão, autismo e saúde mental.</p>
+      </div>
+      <div class="footer-section">
+        <h3>Conteúdos</h3>
+        <ul>
+          <li><a href="#o-que-e">O que é autismo?</a></li>
+          <li><a href="#comunicacao">Comunicação</a></li>
+          <li><a href="#sensorialidade">Sensorialidade</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h3>Para Você</h3>
+        <ul>
+          <li><a href="estudantes.html">Estudantes</a></li>
+          <li><a href="professores.html">Professores</a></li>
+          <li><a href="index.html#rede-apoio">Rede de apoio</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h3>Projeto</h3>
+        <ul>
+          <li><a href="#">Sobre</a></li>
+          <li><a href="#fontes">Fontes e referências</a></li>
+          <li><a href="#aviso">Acessibilidade</a></li>
+        </ul>
+      </div>
+    </div>
+    <p class="footer-disclaimer">Este portal possui finalidade educativa e não substitui avaliação, diagnóstico ou acompanhamento realizado por profissionais qualificados.</p>
+  </footer>
+
+  <script src="assets/js/script.js"></script>
+  <script>
+    // Simple accordion functionality
+    document.querySelectorAll('.accordion-title').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const expanded = btn.getAttribute('aria-expanded') === 'true';
+        btn.setAttribute('aria-expanded', !expanded);
+        btn.nextElementSibling.style.display = expanded ? 'none' : 'block';
+      });
+    });
+  </script>
+</body>
+</html>

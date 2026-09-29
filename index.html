@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Acolher – Plataforma Educacional sobre Autismo, Inclusão e Saúde Mental</title>
+  <meta name="description" content="Informações acessíveis e confiáveis sobre autismo, inclusão escolar e acolhimento para estudantes, professores e famílias." />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://fonts.googleapis.com; style-src 'self' https://fonts.googleapis.com https://fonts.gstatic.com; img-src 'self' data:; font-src https://fonts.gstatic.com; connect-src 'self'; frame-src 'none'" />
+<meta http-equiv="X-Content-Type-Options" content="nosniff" />
+<meta http-equiv="Referrer-Policy" content="no-referrer" />
+<link rel="stylesheet" href="assets/css/design.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+  <!-- Header Principal com Navegação e Acessibilidade -->
+  <header class="site-header" role="banner">
+    <div class="logo-wrapper">
+      <a href="index.html" class="logo" aria-label="Acolher - Página inicial">
+        <div class="logo-icon" aria-hidden="true">💙</div>
+        Acolher
+        <span>Educação</span>
+      </a>
+    </div>
+
+    <nav aria-label="Menu principal">
+      <ul class="nav-list">
+        <li><a href="index.html" class="nav-link active" aria-current="page">Início</a></li>
+        <li><a href="autismo.html" class="nav-link">Autismo</a></li>
+        <li><a href="professores.html" class="nav-link">Professores</a></li>
+        <li><a href="estudantes.html" class="nav-link">Estudantes</a></li>
+        <li><a href="#saude-mental" class="nav-link">Saúde Mental</a></li>
+        <li><a href="#rede-apoio" class="nav-link">Rede de Apoio</a></li>
+      </ul>
+    </nav>
+
+    <div class="accessibility-toolbar" aria-label="Barra de ferramentas de acessibilidade">
+      <button id="increase-text" aria-label="Aumentar tamanho da fonte" title="Aumentar fonte">A+</button>
+      <button id="decrease-text" aria-label="Diminuir tamanho da fonte" title="Diminuir fonte">A-</button>
+      <button id="toggle-contrast" aria-label="Alternar modo de alto contraste" title="Alto contraste">Contraste</button>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <main id="conteudo-principal">
+    <section class="hero" id="hero">
+      <div class="hero-text">
+        <span class="subtitle">Educação • Inclusão • Bem-estar</span>
+        <h1>Informação também é uma forma de acolher.</h1>
+        <p class="description">
+          Uma plataforma acessível para aproximar estudantes, professores e famílias, oferecendo caminhos práticos para construir uma escola mais empática, compreensiva e inclusiva.
+        </p>
+        <div class="hero-buttons">
+          <a href="estudantes.html" class="btn primary">Sou estudante</a>
+          <a href="professores.html" class="btn secondary">Sou professor ou educador</a>
+        </div>
+      </div>
+      <div class="hero-illustration">
+        <img src="assets/img/hero-illustration.svg" alt="Ilustração de convivência e acolhimento no ambiente escolar" width="440" height="320" />
+      </div>
+    </section>
+
+    <!-- 1. Para quem é o Acolher -->
+    <section class="section" id="para-quem">
+      <div class="section-header">
+        <span class="section-badge">Público-Alvo</span>
+        <h2>Um espaço construído para toda a comunidade escolar</h2>
+        <p class="section-description">
+          A inclusão é uma construção coletiva. Encontre conteúdos preparados para sua realidade:
+        </p>
+      </div>
+
+      <div class="audience-grid">
+        <article class="audience-card">
+          <div class="icon-box" aria-hidden="true">🎒</div>
+          <h3>Estudantes</h3>
+          <p>Entenda melhor suas emoções, saiba como lidar com a sobrecarga, comunique o que sente e descubra quem pode te apoiar.</p>
+          <a href="estudantes.html" class="btn outline">Guia do Estudante →</a>
+        </article>
+
+        <article class="audience-card teal">
+          <div class="icon-box" aria-hidden="true">📚</div>
+          <h3>Professores</h3>
+          <p>Estratégias pedagógicas práticas, planejamento de ambiente sensorial, previsibilidade e orientações para situações reais.</p>
+          <a href="professores.html" class="btn outline">Guia do Professor →</a>
+        </article>
+
+        <article class="audience-card amber">
+          <div class="icon-box" aria-hidden="true">🧩</div>
+          <h3>Autismo (TEA)</h3>
+          <p>Compreenda o espectro com clareza, desmistifique estigmas e conheça as diferentes formas de comunicação e sensorialidade.</p>
+          <a href="autismo.html" class="btn outline">Conhecer o Espectro →</a>
+        </article>
+
+        <article class="audience-card purple">
+          <div class="icon-box" aria-hidden="true">🤝</div>
+          <h3>Família e Comunidade</h3>
+          <p>Orientações para fortalecer o diálogo entre casa e escola e identificar serviços de apoio psicossocial.</p>
+          <a href="#rede-apoio" class="btn outline">Ver Rede de Apoio →</a>
+        </article>
+      </div>
+    </section>
+
+    <!-- 2. Conhecendo o Autismo -->
+    <section class="section" id="autismo">
+      <div class="autism-preview">
+        <div class="autism-preview-header">
+          <div>
+            <span class="section-badge amber">Neurodiversidade</span>
+            <h2>Entender é o primeiro passo para incluir</h2>
+            <p class="section-description" style="margin-bottom:0;">
+              O Transtorno do Espectro Autista (TEA) é uma condição do neurodesenvolvimento com manifestações únicas em cada indivíduo.
+            </p>
+          </div>
+          <a href="autismo.html" class="btn primary">Aprender mais sobre o autismo →</a>
+        </div>
+
+        <div class="cards-grid small">
+          <article class="card">
+            <h4>🗣️ Comunicação</h4>
+            <p>Formas diversas de expressar e compreender informações verbais, visuais e não verbais.</p>
+          </article>
+
+          <article class="card">
+            <h4>🎧 Sensibilidade Sensorial</h4>
+            <p>Estímulos como sons altos, luz intensa ou aglomerações podem ser processados com alta intensidade.</p>
+          </article>
+
+          <article class="card">
+            <h4>🗓️ Previsibilidade e Rotina</h4>
+            <p>Antecipar mudanças na rotina escolar reduz a insegurança e favorece a concentração.</p>
+          </article>
+
+          <article class="card">
+            <h4>🌟 Cada pessoa é única</h4>
+            <p>O espectro é plural. O que auxilia um estudante pode precisar de ajustes para outro.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. Apoio aos Professores -->
+    <section class="section" id="professores">
+      <div class="teachers-preview">
+        <div>
+          <span class="section-badge teal">Prática Pedagógica</span>
+          <h2>Pequenas atitudes na sala transformam o cotidiano</h2>
+          <p class="section-description">
+            O educador não precisa ter todas as respostas. Observar com empatia, escutar e adaptar são atitudes fundamentais.
+          </p>
+          <ul class="practice-list">
+            <li><span class="icon">🗓️</span> Ambiente previsível e rotinas visuais</li>
+            <li><span class="icon">🗣️</span> Orientações diretas em etapas curtas</li>
+            <li><span class="icon">🎧</span> Respeito aos momentos de pausa sensorial</li>
+            <li><span class="icon">🤝</span> Parceria constante com a família e equipe escolar</li>
+          </ul>
+          <a href="professores.html" class="btn secondary">Ver estratégias detalhadas para professores →</a>
+        </div>
+        <div>
+          <img src="assets/img/teacher-illustration.svg" alt="Ilustração com rotina visual e práticas pedagógicas" />
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. Saúde Mental e Checagem Emocional -->
+    <section class="section" id="saude-mental">
+      <div class="mental-health-widget">
+        <span class="section-badge purple">Saúde Mental e Bem-Estar</span>
+        <h2>Como você está se sentindo hoje?</h2>
+        <p class="section-description">
+          Reconhecer o que sentimos é o primeiro passo para o autocuidado. Selecione uma emoção para receber uma reflexão acolhedora:
+        </p>
+
+        <div class="emotion-grid" role="group" aria-label="Seletor de estado emocional">
+          <button class="emotion-btn" data-mood="bem" aria-label="Estou bem">
+            <span class="emoji" aria-hidden="true">😊</span>
+            <span>Estou bem</span>
+          </button>
+          <button class="emotion-btn" data-mood="preocupado" aria-label="Estou preocupado">
+            <span class="emoji" aria-hidden="true">😟</span>
+            <span>Preocupado</span>
+          </button>
+          <button class="emotion-btn" data-mood="ansioso" aria-label="Estou ansioso">
+            <span class="emoji" aria-hidden="true">😰</span>
+            <span>Ansioso</span>
+          </button>
+          <button class="emotion-btn" data-mood="triste" aria-label="Estou triste">
+            <span class="emoji" aria-hidden="true">😢</span>
+            <span>Triste</span>
+          </button>
+          <button class="emotion-btn" data-mood="sobrecarregado" aria-label="Estou sobrecarregado">
+            <span class="emoji" aria-hidden="true">😵</span>
+            <span>Sobrecarregado</span>
+          </button>
+          <button class="emotion-btn" data-mood="conversar" aria-label="Preciso conversar">
+            <span class="emoji" aria-hidden="true">🗣️</span>
+            <span>Preciso falar</span>
+          </button>
+        </div>
+
+        <div id="emotion-feedback" class="emotion-feedback-card" style="display: none;" aria-live="polite">
+          <h4 id="feedback-title">Reflexão</h4>
+          <p id="feedback-text"></p>
+        </div>
+
+        <p class="disclaimer">
+          Aviso importante: Esta ferramenta tem finalidade exclusivamente educativa e reflexiva, não substituindo diagnóstico médico ou acompanhamento psicológico.
+        </p>
+      </div>
+    </section>
+
+    <!-- 5. Situações do Cotidiano Escolar -->
+    <section class="section" id="situacoes-cotidiano">
+      <div class="section-header">
+        <span class="section-badge">Cotidiano Escolar</span>
+        <h2>Orientações rápidas para situações reais</h2>
+        <p class="section-description">
+          Dúvidas sobre como agir no dia a dia? Conheça abordagens baseadas em respeito e acolhimento:
+        </p>
+      </div>
+
+      <div class="cards-grid medium">
+        <article class="card">
+          <h4>🔊 Barulho excessivo incomodando</h4>
+          <p>Permita pausas em locais mais calmos, incentive o uso de abafadores de ruído e ofereça um momento de autorregulação.</p>
+        </article>
+
+        <article class="card">
+          <h4>🧩 Dificuldade com mudanças imprevistas</h4>
+          <p>Antecipe transições sempre que possível usando avisos visuais ou lembretes 5 minutos antes da mudança.</p>
+        </article>
+
+        <article class="card">
+          <h4>🤝 Colega se isolando nos intervalos</h4>
+          <p>Faça convites gentis sem pressionar. Proponha atividades estruturadas ou em pequenos grupos com temas de interesse mútuo.</p>
+        </article>
+
+        <article class="card">
+          <h4>💬 Não saber como pedir ajuda</h4>
+          <p>Combine sinais discretos com o estudante (um cartão colorido, um bilhete ou gesto combinado) para avisar quando precisar de apoio.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- 6. Rede de Apoio Compartilhada -->
+    <section class="section" id="rede-apoio">
+      <div class="support-network">
+        <span class="section-badge">Cuidado Coletivo</span>
+        <h2>Você não precisa enfrentar tudo sozinho</h2>
+        <p class="section-description">
+          Apoio emocional e inclusão se constroem em rede. Identifique seus pontos de confiança:
+        </p>
+
+        <div class="network-graph">
+          <div class="node central">Você</div>
+          <div class="node">👨‍👩‍👦 Família ou Responsável</div>
+          <div class="node">🧑‍🏫 Professor de Confiança</div>
+          <div class="node">🏫 Coordenação e Orientação</div>
+          <div class="node">🩺 Profissionais Especializados</div>
+          <div class="node">🏥 Rede Pública de Saúde (CAPS/UBS)</div>
+        </div>
+
+        <p style="color:var(--text-muted); font-size:0.95rem; max-width:650px; margin:0 auto;">
+          Quando o sofrimento for intenso ou persistente, procurar a orientação pedagógica da escola ou um serviço de saúde de referência é o caminho mais seguro e responsável.
+        </p>
+      </div>
+    </section>
+
+    <!-- 7. Fontes e Referências -->
+    <section class="section" id="fontes">
+      <div class="section-header">
+        <span class="section-badge">Bases Científicas e Oficiais</span>
+        <h2>Fontes e Referências Confiáveis</h2>
+        <p class="section-description">
+          Informações fundamentadas em diretrizes educacionais e de saúde pública:
+        </p>
+      </div>
+
+      <ul class="sources-list">
+        <li>Ministério da Educação (MEC / INEP)</li>
+        <li>Ministério da Saúde do Brasil</li>
+        <li>UNICEF Brasil – Educação Inclusiva</li>
+        <li>Organização Mundial da Saúde (OMS)</li>
+      </ul>
+    </section>
+  </main>
+
+  <!-- Rodapé Institucional -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="footer-grid">
+      <div class="footer-section">
+        <h3>Acolher</h3>
+        <p>Projeto acadêmico sobre tecnologia educacional voltado à inclusão, autismo e acolhimento da saúde mental no ambiente escolar.</p>
+      </div>
+
+      <div class="footer-section">
+        <h3>Conteúdos</h3>
+        <ul>
+          <li><a href="autismo.html">Guia sobre Autismo</a></li>
+          <li><a href="professores.html">Guia para Professores</a></li>
+          <li><a href="estudantes.html">Espaço do Estudante</a></li>
+          <li><a href="#saude-mental">Saúde Mental</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-section">
+        <h3>Para Navegar</h3>
+        <ul>
+          <li><a href="#para-quem">Para quem é o site</a></li>
+          <li><a href="#situacoes-cotidiano">Situações do cotidiano</a></li>
+          <li><a href="#rede-apoio">Rede de apoio</a></li>
+          <li><a href="#fontes">Fontes e referências</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-section">
+        <h3>Compromisso</h3>
+        <p style="font-size: 0.85rem; color: var(--text-light);">
+          Comprometido com a acessibilidade web, linguagem clara e respeito aos direitos das pessoas neurodivergentes.
+        </p>
+      </div>
+    </div>
+
+    <p class="footer-disclaimer">
+      Este portal possui finalidade exclusivamente educativa e informativa. Não substitui avaliação, diagnóstico ou acompanhamento especializado realizado por profissionais de saúde e educação.
+    </p>
+  </footer>
+
+  <script src="assets/js/script.js"></script>
+  <script>
+    // Interação do widget de humor / saúde mental na home
+    const emotionFeedbackMap = {
+      bem: {
+        title: "Que bom que você está bem! ☀️",
+        text: "Aproveite esse momento para cultivar atividades que você gosta e, se puder, ofereça uma palavra de apoio a um colega que esteja precisando."
+      },
+      preocupado: {
+        title: "Preocupações fazem parte do dia a dia 💭",
+        text: "Tente anotar em um papel o que está sob o seu controle e o que foge dele. Conversar com alguém de confiança ajuda a clarear os pensamentos."
+      },
+      ansioso: {
+        title: "Respire com calma no seu próprio tempo 🫁",
+        text: "A ansiedade faz o corpo ficar em alerta. Tente beber um pouco de água, focar nos apoios dos seus pés no chão e desacelerar o ritmo respiratório."
+      },
+      triste: {
+        title: "A tristeza é legítima e merece acolhimento 💙",
+        text: "Não precisa fingir que está tudo bem o tempo todo. Respeite seu ritmo e lembre-se de que compartilhar esse sentimento com quem se importa com você alivia o peso."
+      },
+      sobrecarregado: {
+        title: "Muitas coisas ao mesmo tempo? 🛑",
+        text: "Pare por alguns instantes. Se o ambiente estiver barulhento ou cheio, tente se afastar para um espaço mais calmo. Divida suas tarefas em etapas bem pequenas."
+      },
+      conversar: {
+        title: "Pedir ajuda é sinal de coragem 🤝",
+        text: "Procure um professor, orientador pedagógico, amigo ou familiar de sua confiança. Dizer 'não estou bem e gostaria de conversar' é um excelente primeiro passo."
+      }
+    };
+
+    const emotionBtns = document.querySelectorAll('.emotion-btn');
+    const feedbackBox = document.getElementById('emotion-feedback');
+    const feedbackTitle = document.getElementById('feedback-title');
+    const feedbackText = document.getElementById('feedback-text');
+
+    emotionBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        emotionBtns.forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        const mood = btn.dataset.mood;
+        if (emotionFeedbackMap[mood]) {
+          feedbackTitle.textContent = emotionFeedbackMap[mood].title;
+          feedbackText.textContent = emotionFeedbackMap[mood].text;
+          feedbackBox.style.display = 'block';
+        }
+      });
+    });
+  </script>
+</body>
+
+</html>
