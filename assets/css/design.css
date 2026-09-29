@@ -87,7 +87,10 @@ body.high-contrast .hero,
 body.high-contrast .dimension,
 body.high-contrast .info-box,
 body.high-contrast .situation-card,
-body.high-contrast .emotion-card {
+body.high-contrast .emotion-card,
+body.high-contrast .helpline-card,
+body.high-contrast .community-disclaimer,
+body.high-contrast .peer-card {
   border: 2px solid #000000 !important;
   background: #ffffff !important;
   color: #000000 !important;
@@ -1229,6 +1232,281 @@ p.lead {
   font-size: 0.8125rem;
   color: var(--text-light);
   line-height: 1.6;
+}
+
+/* --------------------------------------------------------------------------
+   Community Project & Official Helplines / Support
+   -------------------------------------------------------------------------- */
+.community-disclaimer {
+  background: linear-gradient(135deg, #eff6ff 0%, #f0fdfa 100%);
+  border: 1.5px solid var(--secondary-border);
+  border-radius: var(--radius-lg);
+  padding: 1.75rem 2rem;
+  margin: 2rem 0;
+  display: flex;
+  gap: 1.25rem;
+  align-items: flex-start;
+  box-shadow: var(--shadow-sm);
+}
+
+.community-disclaimer .disclaimer-icon {
+  font-size: 2rem;
+  line-height: 1;
+  flex-shrink: 0;
+}
+
+.community-disclaimer h3 {
+  font-size: 1.15rem;
+  color: var(--primary);
+  margin-bottom: 0.5rem;
+}
+
+.community-disclaimer p {
+  color: var(--text-muted);
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+.helpline-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  margin: 2rem 0;
+}
+
+.helpline-card {
+  background: var(--surface);
+  border: 1.5px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 1.75rem;
+  display: flex;
+  flex-direction: column;
+  transition: all var(--transition-normal);
+  box-shadow: var(--shadow-sm);
+  position: relative;
+  overflow: hidden;
+}
+
+.helpline-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: var(--border);
+  transition: background var(--transition-fast);
+}
+
+.helpline-card.cvv::before { background: #0284c7; }
+.helpline-card.disque100::before { background: #d97706; }
+.helpline-card.sus::before { background: #0d9488; }
+.helpline-card.safernet::before { background: #7c3aed; }
+
+.helpline-card:hover {
+  transform: translateY(-4px);
+  border-color: var(--primary-border);
+  box-shadow: var(--shadow-md);
+}
+
+.helpline-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 1rem;
+  margin-bottom: 0.75rem;
+}
+
+.helpline-card-header h3 {
+  font-size: 1.2rem;
+  color: var(--text-main);
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.helpline-badge {
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  padding: 0.25rem 0.6rem;
+  border-radius: var(--radius-full);
+  background: var(--surface-alt);
+  color: var(--text-muted);
+  white-space: nowrap;
+}
+
+.helpline-card.cvv .helpline-badge { background: #e0f2fe; color: #0369a1; }
+.helpline-card.disque100 .helpline-badge { background: #fef3c7; color: #b45309; }
+.helpline-card.sus .helpline-badge { background: #ccfbf1; color: #0f766e; }
+.helpline-card.safernet .helpline-badge { background: #ede9fe; color: #6d28d9; }
+
+.helpline-phone {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: var(--primary);
+  margin: 0.75rem 0;
+  padding: 0.5rem 0.85rem;
+  background: var(--primary-light);
+  border-radius: var(--radius-md);
+  width: fit-content;
+}
+
+.helpline-desc {
+  color: var(--text-muted);
+  font-size: 0.925rem;
+  line-height: 1.6;
+  margin-bottom: 1.25rem;
+  flex-grow: 1;
+}
+
+.helpline-details {
+  list-style: none;
+  font-size: 0.875rem;
+  color: var(--text-muted);
+  margin-bottom: 1.25rem;
+  padding-left: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+.helpline-details li {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.helpline-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: auto;
+}
+
+.helpline-actions a {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+  padding: 0.5rem 1rem;
+  border-radius: var(--radius-sm);
+  transition: all var(--transition-fast);
+}
+
+.btn-helpline-primary {
+  background: var(--primary);
+  color: #ffffff !important;
+}
+
+.btn-helpline-primary:hover {
+  background: var(--primary-hover);
+  color: #ffffff !important;
+}
+
+.btn-helpline-secondary {
+  background: var(--surface-alt);
+  color: var(--text-main) !important;
+  border: 1px solid var(--border);
+}
+
+.btn-helpline-secondary:hover {
+  background: var(--primary-light);
+  border-color: var(--primary-border);
+  color: var(--primary) !important;
+}
+
+/* Peer Support Cards ("Ajudar Alguém") */
+.peer-support-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.25rem;
+  margin: 1.75rem 0;
+}
+
+.peer-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  padding: 1.5rem;
+  box-shadow: var(--shadow-sm);
+  transition: all var(--transition-normal);
+}
+
+.peer-card:hover {
+  transform: translateY(-3px);
+  border-color: var(--secondary-border);
+  box-shadow: var(--shadow-md);
+}
+
+.peer-card .peer-icon {
+  font-size: 1.75rem;
+  margin-bottom: 0.75rem;
+  display: block;
+}
+
+.peer-card h4 {
+  font-size: 1.05rem;
+  color: var(--text-main);
+  margin-bottom: 0.5rem;
+}
+
+.peer-card p {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  line-height: 1.55;
+}
+
+/* Situation card active state */
+.situation-card.active {
+  background: var(--primary);
+  color: #ffffff;
+  border-color: var(--primary);
+  box-shadow: 0 4px 12px rgba(30, 58, 138, 0.25);
+}
+
+/* Interactive Checklist styles */
+.checklist.interactive-checklist {
+  list-style: none;
+  padding: 0;
+}
+
+.checklist.interactive-checklist li {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  padding: 0.85rem 1.25rem;
+  margin-bottom: 0.65rem;
+  display: flex;
+  align-items: center;
+  gap: 0.85rem;
+  font-size: 0.95rem;
+  transition: all var(--transition-fast);
+  cursor: pointer;
+}
+
+.checklist.interactive-checklist li:hover {
+  background: var(--surface-alt);
+  border-color: var(--primary-border);
+}
+
+.checklist.interactive-checklist input[type="checkbox"] {
+  width: 1.25rem;
+  height: 1.25rem;
+  accent-color: var(--primary);
+  cursor: pointer;
+}
+
+.checklist.interactive-checklist li.checked {
+  background: #f0fdf4;
+  border-color: #86efac;
+  color: #166534;
+  text-decoration: line-through;
 }
 
 /* --------------------------------------------------------------------------

@@ -93,8 +93,9 @@
     </div>
   </section>
 
-  <!-- 2. PREPARANDO UMA SALA MAIS ACOLHEDORA -->
-  <section class="section" id="preparando-sala">
+  <!-- 2. PREPARANDO UMA SALA MAIS ACOLHEDORA (BOAS PRÁTICAS) -->
+  <section class="section" id="boas-praticas">
+    <a id="preparando-sala" style="position:relative;top:-80px;visibility:hidden;display:block;"></a>
     <h2>Inclusão também começa antes da aula</h2>
     <p>Visualize a sala como ponto central. Ao redor, pontos interativos que ajudam a planejar.</p>
     <div class="room-visual">
@@ -223,19 +224,21 @@
     <p>Uma mudança de comportamento não significa automaticamente a presença de um transtorno mental. Entretanto, mudanças persistentes podem indicar que o estudante está enfrentando alguma dificuldade.</p>
     <div class="cards-grid small">
       <article class="card small">
-        <h4>Isolamento</h4>
-        <p></p>
+        <h4>Isolamento repentino</h4>
+        <p>Afastamento persistente dos colegas, recusa em participar de atividades conjuntas e preferência por ficar sozinho durante intervalos e recreio.</p>
       </article>
       <article class="card small">
-        <h4>Mudança importante de comportamento</h4>
-        <p></p>
+        <h4>Mudança de comportamento</h4>
+        <p>Alterações bruscas no humor, irritabilidade incomum, apatia súbita ou reações desproporcionais a situações corriqueiras da sala de aula.</p>
       </article>
       <article class="card small">
-        <h4>Sofrimento emocional frequente</h4>
-        <p></p>
+        <h4>Sofrimento emocional</h4>
+        <p>Episódios de choro frequente, ansiedade intensa diante de avaliações, queixas somáticas constantes (dor de barriga, dor de cabeça) ou falas de desesperança.</p>
       </article>
       <article class="card small">
-        <h4>Dificuldade persistente de concentração</h</article>
+        <h4>Queda de concentração</h4>
+        <p>Dificuldade atípica e contínua para acompanhar o ritmo das aulas, sonolência excessiva ou desorganização repentina com materiais e prazos.</p>
+      </article>
     </div>
     <blockquote class="highlight">
       <p>Observe mudanças em relação ao comportamento habitual daquele estudante, e não apenas comportamentos isolados.</p>
@@ -334,16 +337,19 @@ O QUE AJUDOU: Conversa individual e alguns minutos em ambiente mais tranquilo.
   <!-- 14. CHECKLIST ANTES DA AULA -->
   <section class="section" id="checklist">
     <h2>Checklist de uma aula mais inclusiva</h2>
-    <ul class="checklist visual-checklist">
-      <li><input type="checkbox" disabled> As instruções estão claras?</li>
-      <li><input type="checkbox" disabled> Posso dividir a atividade em etapas?</li>
-      <li><input type="checkbox" disabled> Existe alguma mudança que devo antecipar?</li>
-      <li><input type="checkbox" disabled> Existem diferentes formas de participação?</li>
-      <li><input type="checkbox" disabled> O ambiente possui estímulos que podem dificultar a atividade?</li>
-      <li><input type="checkbox" disabled> Os estudantes sabem como pedir ajuda?</li>
-      <li><input type="checkbox" disabled> Estou avaliando aprendizagem sem comparar estudantes de maneira constrangedora?</li>
+    <p style="color:var(--text-muted); margin-bottom:1.25rem;">
+      Utilize esta lista interativa para verificar pontos práticos antes da sua aula:
+    </p>
+    <ul class="checklist interactive-checklist" id="teacher-checklist">
+      <li><label style="display:flex;align-items:center;gap:0.75rem;cursor:pointer;width:100%;"><input type="checkbox"> As instruções estão claras, objetivas e registradas visualmente no quadro?</label></li>
+      <li><label style="display:flex;align-items:center;gap:0.75rem;cursor:pointer;width:100%;"><input type="checkbox"> A atividade mais extensa foi dividida em pequenas etapas acessíveis?</label></li>
+      <li><label style="display:flex;align-items:center;gap:0.75rem;cursor:pointer;width:100%;"><input type="checkbox"> Há alguma alteração de rotina ou evento especial que devo antecipar?</label></li>
+      <li><label style="display:flex;align-items:center;gap:0.75rem;cursor:pointer;width:100%;"><input type="checkbox"> Existem diferentes formas dos estudantes participarem (oral, escrita, desenho)?</label></li>
+      <li><label style="display:flex;align-items:center;gap:0.75rem;cursor:pointer;width:100%;"><input type="checkbox"> O ambiente tem excesso de ruído ou estímulos visuais que posso atenuar?</label></li>
+      <li><label style="display:flex;align-items:center;gap:0.75rem;cursor:pointer;width:100%;"><input type="checkbox"> Os estudantes sabem como pedir ajuda ou sinalizar necessidade de pausa discreta?</label></li>
+      <li><label style="display:flex;align-items:center;gap:0.75rem;cursor:pointer;width:100%;"><input type="checkbox"> A avaliação considera a evolução do estudante sem comparações constrangedoras?</label></li>
     </ul>
-    <p>Marque os itens visualmente antes da aula. Não é necessário salvar.</p>
+    <button id="reset-checklist" class="btn secondary" style="margin-top:1rem; font-size:0.875rem;">Limpar marcações</button>
   </section>
 
   <!-- 15. DEPOIS DE UMA SITUAÇÃO DIFÍCIL -->
@@ -366,13 +372,34 @@ O QUE AJUDOU: Conversa individual e alguns minutos em ambiente mais tranquilo.
     <p>Você não precisa resolver sozinho situações que exigem atuação de outros profissionais.</p>
   </section>
 
-  <!-- 17. QUANDO ENCAMINHAR -->
+  <!-- 17. QUANDO ENCAMINHAR E CANAIS PÚBLICOS -->
   <section class="section" id="encaminhar">
-    <h2>Quando encaminhar</h2>
+    <h2>Quando encaminhar e onde buscar apoio na rede pública</h2>
     <div class="flow-diagram">
-      <span>PERCEBI ALGO</span> → <span>OBSERVEI</span> → <span>CONVERSEI</span> → <span>CONTINUA PREOCUPANTE?</span> → <span>ACIONAR EQUIPE / REDE DE APOIO</span>
+      <span>PERCEBI ALGO</span> → <span>OBSERVEI</span> → <span>CONVERSEI</span> → <span>CONTINUA PREOCUPANTE?</span> → <span>ACIONAR EQUIPE / REDE PÚBLICA</span>
     </div>
-    <p>Situções persistentes, graves ou que indiquem sofrimento importante devem ser compartilhadas conforme os protocolos da instituição e a rede de proteção disponível.</p>
+    <p style="color:var(--text-muted); margin-bottom:1.5rem;">
+      Situações persistentes, graves ou que indiquem sofrimento importante devem ser compartilhadas conforme os protocolos da instituição e a rede de proteção social:
+    </p>
+
+    <div class="cards-grid small">
+      <article class="card small">
+        <h4>Conselho Tutelar</h4>
+        <p>Órgão municipal autônomo encarregado de zelar pelos direitos da criança e do adolescente. Acionado em casos de negligência, abandono, violência doméstica ou evasão reiterada.</p>
+      </article>
+      <article class="card small">
+        <h4>Disque 100 (Direitos Humanos)</h4>
+        <p>Canal federal gratuito e anônimo para orientação e denúncia de violações contra crianças, adolescentes e pessoas com deficiência ou autismo.</p>
+      </article>
+      <article class="card small">
+        <h4>SUS – CAPSi e UBS</h4>
+        <p>Centros de Atenção Psicossocial Infantojuvenil e Unidades Básicas de Saúde. Serviços públicos e abertos para cuidado em saúde mental em parceria com a família.</p>
+      </article>
+      <article class="card small">
+        <h4>Sala de Recursos / AEE</h4>
+        <p>Atendimento Educacional Especializado dentro da própria rede de ensino para adequações pedagógicas, pranchas de comunicação e recursos de acessibilidade.</p>
+      </article>
+    </div>
   </section>
 
   <!-- 18. RESUMO FINAL -->
@@ -389,14 +416,30 @@ O QUE AJUDOU: Conversa individual e alguns minutos em ambiente mais tranquilo.
 
   <!-- 19. FONTES -->
   <section class="section" id="fontes">
-    <h2>Referências</h2>
-    <ul class="source-list">
-      <li>Organização Mundial da Saúde (OMS) – <a href="#" target="_blank">Ver fonte</a></li>
-      <li>UNICEF – <a href="#" target="_blank">Ver fonte</a></li>
-      <li>UNESCO – <a href="#" target="_blank">Ver fonte</a></li>
-      <li>Ministério da Saúde – <a href="#" target="_blank">Ver fonte</a></li>
-      <li>Fontes oficiais brasileiras de educação – <a href="#" target="_blank">Ver fonte</a></li>
-    </ul>
+    <h2>Referências e Portais Oficiais</h2>
+    <p style="color:var(--text-muted); margin-bottom:1.5rem;">Diretrizes e materiais técnicos fundamentados em instituições públicas oficiais:</p>
+    <div class="cards-grid small">
+      <article class="card small">
+        <h4>MEC / INEP</h4>
+        <p>Diretrizes nacionais para a Educação Especial na Perspectiva Inclusiva.</p>
+        <p><a href="https://www.gov.br/mec/pt-br" target="_blank" rel="noopener noreferrer">Acessar portal Gov.br/MEC ↗</a></p>
+      </article>
+      <article class="card small">
+        <h4>Ministério da Saúde</h4>
+        <p>Linhas de cuidado em saúde mental e atendimento à pessoa autista no SUS.</p>
+        <p><a href="https://www.gov.br/saude/pt-br" target="_blank" rel="noopener noreferrer">Acessar portal Gov.br/Saúde ↗</a></p>
+      </article>
+      <article class="card small">
+        <h4>UNICEF Brasil</h4>
+        <p>Orientações práticas de inclusão, equidade e proteção de crianças e adolescentes.</p>
+        <p><a href="https://www.unicef.org/brazil/" target="_blank" rel="noopener noreferrer">Acessar portal UNICEF ↗</a></p>
+      </article>
+      <article class="card small">
+        <h4>Organização Mundial da Saúde (OMS)</h4>
+        <p>Guias de saúde mental escolar e desenvolvimento infantojuvenil.</p>
+        <p><a href="https://www.who.int/pt" target="_blank" rel="noopener noreferrer">Acessar portal OMS ↗</a></p>
+      </article>
+    </div>
   </section>
 
   <footer class="site-footer" aria-label="Rodapé">
@@ -424,9 +467,9 @@ O QUE AJUDOU: Conversa individual e alguns minutos em ambiente mais tranquilo.
       <div class="footer-section">
         <h3>Projeto</h3>
         <ul>
-          <li><a href="#">Sobre</a></li>
+          <li><a href="#papel-do-professor">Papel do Professor</a></li>
           <li><a href="#fontes">Fontes e referências</a></li>
-          <li><a href="#">Acessibilidade</a></li>
+          <li><a href="#hero-professor">Voltar ao topo</a></li>
         </ul>
       </div>
     </div>
@@ -435,96 +478,298 @@ O QUE AJUDOU: Conversa individual e alguns minutos em ambiente mais tranquilo.
 
   <script src="assets/js/script.js"></script>
   <script>
-    // Simple accordion for situation details
+    // Complete data for all 10 situation cards
     const situationsData = {
       barulho: {
         title: 'Ambiente muito barulhento',
         observar: [
-          'Existe algum som específico causando desconforto?',
-          'O ambiente possui muitos estímulos simultâneos?',
-          'Isso ocorre frequentemente em situações semelhantes?'
+          'Existe algum som específico causando desconforto (sinal, arrastar de cadeiras, conversas)?',
+          'O estudante tampa os ouvidos, abaixa a cabeça na carteira ou busca sair da sala?',
+          'Isso ocorre com frequência em horários de maior agitação ou transição de aulas?'
         ],
         ajudar: [
-          'Conversar com o estudante;',
-          'Reduzir estímulos quando possível;',
-          'Permitir pausa em local adequado, conforme organização da escola;',
-          'Identificar previamente situações muito barulhentas;',
-          'Combinar estratégias com estudante e equipe escolar.'
+          'Permitir que o estudante utilize abafadores de ruído ou fones confortáveis;',
+          'Oferecer uma breve pausa em um ambiente mais silencioso (biblioteca, pátio calmo);',
+          'Reduzir ruídos desnecessários na sala e fechar janelas/portas quando houver barulho externo;',
+          'Combinar previamente um sinal discreto para quando o barulho for excessivo.'
         ],
         evitar: [
-          'Obrigar o estudante a permanecer na situação apenas para "se acostumar";',
-          'Ridicularizar o desconforto;',
-          'Assumir que é birra ou falta de interesse.'
+          'Obrigar o estudante a suportar o incômodo para "se acostumar";',
+          'Ridicularizar o incômodo ou dizer que "não é nada";',
+          'Interpretar a reação como falta de vontade ou desrespeito.'
         ],
-        apoio: 'Se o desconforto persistir e interferir na aprendizagem, comunicar a equipe pedagógica ou de apoio.'
+        apoio: 'Se o incômodo com barulhos for constante, dialogue com a família e a equipe de AEE para avaliar recursos sensoriais adequados.'
+      },
+      agitado: {
+        title: 'Estudante muito agitado ou inquieto',
+        observar: [
+          'A agitação começou após algum estímulo específico, frustração ou cansaço acumulado?',
+          'Há inquietação motora (andar pela sala, tamborilar dedos, balançar o corpo) para autorregulação?',
+          'A agitação aumenta quando há tarefas longas ou pouco claras?'
+        ],
+        ajudar: [
+          'Permita pausas motoras com propósito útil (ex.: buscar material, beber água, apagar o quadro);',
+          'Alterne atividades que exigem atenção concentrada com momentos de menor demanda;',
+          'Fale em tom de voz calmo e utilize frases curtas e diretas;',
+          'Verifique se a postura e a cadeira estão confortáveis.'
+        ],
+        evitar: [
+          'Exigir imobilidade completa com advertências em tom punitivo diante da turma;',
+          'Aumentar o volume da sua voz em resposta à agitação dele;',
+          'Excluir o estudante de intervalos como forma de castigo.'
+        ],
+        apoio: 'Se a inquietação persistir e impedir o aprendizado, consulte o orientador pedagógico e a família para entender a rotina de sono e bem-estar do aluno.'
+      },
+      isolado: {
+        title: 'Estudante se isolou ou evita interação',
+        observar: [
+          'O isolamento ocorre nas aulas, nos intervalos ou em trabalhos coletivos?',
+          'O estudante demonstra medo, tristeza, desconforto social ou apenas precisa de recarga energética?',
+          'Há sinais de exclusão ativa por parte de outros colegas de turma?'
+        ],
+        ajudar: [
+          'Aproxime-se com tranquilidade sem cobranças ou exigências imediatas;',
+          'Ofereça uma tarefa que ele possa realizar individualmente ou em dupla com um colega acolhedor;',
+          'Valide a presença do estudante com afeto discreto ("Que bom que você está aqui hoje");',
+          'Observe se há interesses específicos que possam aproximá-lo de colegas afins.'
+        ],
+        evitar: [
+          'Forçar exposição diante da turma inteira de forma constrangedora;',
+          'Chamar atenção pública sobre a timidez ou silêncio dele;',
+          'Ignorar o isolamento quando durar semanas consecutivas.'
+        ],
+        apoio: 'Isolamento prolongado pode indicar sofrimento emocional, depressão ou bullying. Comunique a orientação escolar para acompanhamento preventivo.'
       },
       mudanca: {
-        title: 'Mudança inesperada na rotina',
+        title: 'Mudança inesperada na rotina escolar',
         observar: [
-          'Qual foi a mudança?',
-          'Como o estudante reagiu imediatamente?',
-          'Houve sinal de ansiedade ou confusão?'
+          'Qual foi a alteração na programação habitual (troca de professor, horário, evento externo)?',
+          'O estudante demonstrou desorientação, angústia, ansiedade súbita ou rigidez comportamental?',
+          'Houve aviso prévio suficiente ou a mudança foi repentina?'
         ],
         ajudar: [
-          'Explicar a mudança com antecedência quando possível;',
-          'Fornecer justificativa clara e concisa;',
-          'Oferecer suporte imediato (ex.: material de apoio, tempo extra).'
+          'Antecipar avisos de mudanças com antecedência sempre que possível;',
+          'Apresentar a nova sequência de forma visual (anotar no quadro ou em cartão de rotina);',
+          'Explicar o que vai acontecer de forma concisa e tranquilizadora;',
+          'Oferecer suporte inicial na transição da nova atividade.'
         ],
         evitar: [
-          'Ignorar a alteração e seguir sem aviso;',
-          'Pressionar para que o estudante se adapte instantaneamente.'
+          'Mudar planos sem qualquer comunicação prévia;',
+          'Pressionar o estudante para que se adapte instantaneamente;',
+          'Minimizar a necessidade de previsibilidade que muitas pessoas com autismo possuem.'
         ],
-        apoio: 'Se a mudança gera grande estresse ou desregulação, envolver a equipe de apoio ou psicólogo escolar.'
+        apoio: 'Se mudanças causarem desregulação frequente, elabore um cronograma visual semanal em parceria com a equipe pedagógica e a família.'
       },
-      // Additional situations can be added here following the same structure
+      naoparticipa: {
+        title: 'Estudante não quer participar da atividade',
+        observar: [
+          'A atividade é individual ou coletiva? O estudante compreendeu o enunciado?',
+          'Há medo de errar, fobia de falar em público ou o material é inacessível para ele?',
+          'O estudante está sobrecarregado ou cansado no momento?'
+        ],
+        ajudar: [
+          'Divida a tarefa em etapas menores com metas curtas e alcançáveis;',
+          'Permita formas alternativas de resposta (por escrito, desenho, apresentação gravada ou em dupla);',
+          'Descubra onde começou a dificuldade e faça o primeiro passo junto com o estudante;',
+          'Reforce pequenos avanços sem focar apenas no resultado perfeito.'
+        ],
+        evitar: [
+          'Zerar nota ou aplicar advertência sem antes entender o bloqueio;',
+          'Rotular o aluno como "desinteressado", "preguiçoso" ou "rebelde";',
+          'Cobrar participação forçada que cause humilhação diante dos outros.'
+        ],
+        apoio: 'Consulte a coordenação pedagógica para analisar se há necessidade de adequação curricular ou apoio pedagógico específico.'
+      },
+      chorou: {
+        title: 'Estudante começou a chorar ou expressar sofrimento',
+        observar: [
+          'Houve um gatilho imediato (frustração, nota, atrito com colega, dor física, barulho)?',
+          'O estudante consegue falar ou está com a respiração ofegante?',
+          'Há colegas rindo, apontando ou invadindo o espaço dele?'
+        ],
+        ajudar: [
+          'Preserve a privacidade do estudante conduzindo-o a um espaço mais reservado e seguro;',
+          'Permaneça por perto transmitindo segurança: "Está tudo bem, respire no seu ritmo, estou aqui com você";',
+          'Ofereça um copo de água e espere a crise emocional diminuir antes de fazer perguntas;',
+          'Oriente a turma a seguir a atividade com respeito sem intervenções inoportunas.'
+        ],
+        evitar: [
+          'Dizer "engula o choro", "não chore" ou "não foi nada de mais";',
+          'Exigir explicações lógicas imediatas enquanto o estudante estiver desregulado;',
+          'Expor a vulnerabilidade do aluno na frente da sala de aula.'
+        ],
+        apoio: 'Se crises de choro forem recorrentes ou sem gatilho aparente, acione a coordenação para acolhimento e contato respeitoso com a família.'
+      },
+      naoexplica: {
+        title: 'Estudante não consegue explicar o que sente',
+        observar: [
+          'O estudante demonstra dificuldade para nomear sentimentos (alexitimia) ou bloqueio verbal em momentos de estresse?',
+          'A linguagem corporal indica dor, tensão, angústia, medo ou necessidade de sair?',
+          'O aluno responde melhor por escrita, desenhos ou seleção de imagens?'
+        ],
+        ajudar: [
+          'Diga com empatia: "Tudo bem não saber explicar agora. Você não precisa achar as palavras perfeitas";',
+          'Apresente recursos visuais ou opções simples (ex.: "Está doendo algo?", "O barulho incomodou?", "Quer beber água?");',
+          'Dê tempo suficiente para a resposta sem pressionar;',
+          'Permita que o estudante aponte cartões ilustrativos ou escreva um bilhete.'
+        ],
+        evitar: [
+          'Fazer interrogatórios rápidos ("O que você tem? Fala logo!");',
+          'Tratar o silêncio ou mutismo como teimosia ou afronta;',
+          'Desistir de acolher por não ter recebido resposta verbal imediata.'
+        ],
+        apoio: 'Troque ideias com o professor de Educação Especial/AEE sobre pranchas de comunicação alternativa e combinados prévios.'
+      },
+      grupo: {
+        title: 'Dificuldade em atividades em grupo',
+        observar: [
+          'O estudante é isolado pelos demais colegas ou evita o grupo por ansiedade social e excesso de ruído?',
+          'Os papéis na atividade estão definidos ou há disputa de liderança e indefinição?',
+          'A tarefa exige interação constante ou pode ter partes individuais articuladas?'
+        ],
+        ajudar: [
+          'Forme grupos menores (duplas ou trios) com colegas acolhedores e pacientes;',
+          'Defina claramente o papel de cada integrante (pesquisador, relator, ilustrador, revisor);',
+          'Permita que o estudante participe de forma alternativa quando a interação for inviável;',
+          'Monitore a dinâmica do grupo para garantir que todos sejam ouvidos com respeito.'
+        ],
+        evitar: [
+          'Deixar a escolha de grupos totalmente livre se houver aluno que rotineiramente fica sobrando;',
+          'Forçar um estudante a falar diante de todos sem preparação prévia;',
+          'Ignorar atitudes sutis de exclusão ou deboche entre os colegas.'
+        ],
+        apoio: 'Desenvolva projetos socioemocionais em sala para cultivar cooperação e empatia entre toda a comunidade escolar.'
+      },
+      rendimento: {
+        title: 'Queda brusca ou mudança no rendimento escolar',
+        observar: [
+          'A mudança foi repentina ou gradual ao longo do bimestre? Atinge todas as matérias?',
+          'O estudante apresenta sinais de sono excessivo, esquecimentos incomuns ou falta de entrega de tarefas?',
+          'Houve mudanças na família, perdas, luto ou questões de saúde relatadas?'
+        ],
+        ajudar: [
+          'Convide o estudante para uma conversa reservada, sem julgamentos nem ameaças;',
+          'Pergunte como ele tem se sentido: "Notei que você tem estado diferente e me preocupo com você. Como estão as coisas?";',
+          'Ofereça flexibilidade no formato ou no prazo de avaliações durante momentos de crise;',
+          'Proponha estratégias de recuperação formativa e acompanhamento mais próximo.'
+        ],
+        evitar: [
+          'Fazer cobranças públicas em tom de decepção ou ameaça de reprovação;',
+          'Comparar o rendimento atual do estudante com o de outros colegas;',
+          'Reduzir a questão a "falta de esforço" sem investigar o contexto psicossocial.'
+        ],
+        apoio: 'Leve a situação ao conselho de classe e coordenação para articular apoio pedagógico e diálogo construtivo com os responsáveis.'
+      },
+      bullying: {
+        title: 'Estudante sendo vítima de bullying ou agressão',
+        observar: [
+          'Há apelidos ofensivos, risadas zombeteiras, exclusão proposital, empurrões ou piadas disfarçadas?',
+          'O estudante demonstra medo de ir ao banheiro, ao recreio ou entrar na sala?',
+          'Ocorreram episódios de ofensas ou exclusão em grupos de WhatsApp ou redes sociais da turma?'
+        ],
+        ajudar: [
+          'Intervenha imediatamente diante de qualquer agressão verbal, física ou moral;',
+          'Acolha a vítima em particular, validando seu sofrimento e garantindo que a culpa NÃO é dela;',
+          'Registre os fatos de forma objetiva (datas, envolvidos, testemunhas e ocorrências);',
+          'Trabalhe medidas educativas e restaurativas com os agressores conforme o regimento escolar.'
+        ],
+        evitar: [
+          'Dizer que "é apenas brincadeira de criança" ou sugerir que a vítima "revidar";',
+          'Forçar confrontos diretos cara a cara que intimidem ainda mais a vítima;',
+          'Ignorar que o bullying continuará caso a escola não tome providências institucionais firmes.'
+        ],
+        apoio: 'Aplique a Lei Anti-Bullying (Lei nº 13.185/2015), acione a direção escolar, notifique os responsáveis e encaminhe ao Conselho Tutelar se houver violência ou ameaça grave.'
+      }
     };
 
-    document.querySelectorAll('.situation-card').forEach(btn => {
+    // Situation cards interaction
+    const situationCards = document.querySelectorAll('.situation-card');
+    const situationDetail = document.getElementById('situation-detail');
+
+    situationCards.forEach(btn => {
       btn.addEventListener('click', () => {
+        situationCards.forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+
         const id = btn.dataset.id;
         const data = situationsData[id];
-        const container = document.getElementById('situation-detail');
+
         if (!data) {
-          container.innerHTML = '<p>Detalhes ainda não disponíveis para esta situação.</p>';
+          situationDetail.innerHTML = '<p>Detalhes ainda não disponíveis para esta situação.</p>';
           return;
         }
+
         const tmpl = document.getElementById('situation-template');
         const clone = tmpl.content.cloneNode(true);
         clone.querySelector('.situation-title').textContent = data.title;
+
         const obsList = clone.querySelector('.obs-list');
         data.observar.forEach(item => {
           const li = document.createElement('li'); li.textContent = item; obsList.appendChild(li);
         });
+
         const ajudaList = clone.querySelector('.ajuda-list');
         data.ajudar.forEach(item => {
           const li = document.createElement('li'); li.textContent = item; ajudaList.appendChild(li);
         });
+
         const evitarList = clone.querySelector('.evitar-list');
         data.evitar.forEach(item => {
           const li = document.createElement('li'); li.textContent = item; evitarList.appendChild(li);
         });
+
         clone.querySelector('.apoio-text').textContent = data.apoio;
-        container.innerHTML = '';
-        container.appendChild(clone);
+
+        situationDetail.innerHTML = '';
+        situationDetail.appendChild(clone);
+        situationDetail.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
       });
     });
 
-    // Room points interaction (simple tooltip style)
+    // Room points interaction
     const roomInfo = document.getElementById('room-info');
+    const roomPoints = document.querySelectorAll('.room-point');
     const infoTexts = {
-      rotina: 'Quando possível, deixe claro o que acontecerá durante a aula.',
-      instrucao: 'Apresente orientações de maneira objetiva e considere dividir tarefas complexas em etapas menores.',
-      ambiente: 'Observe se barulho, iluminação ou excesso de estímulos estão dificultando a participação de algum estudante.',
-      participacao: 'Nem todos os estudantes participam e se comunicam da mesma maneira.',
-      mudancas: 'Quando possível, antecipe mudanças importantes na rotina.',
-      apoio: 'Combine previamente maneiras pelas quais o estudante pode comunicar que precisa de ajuda ou de uma pausa.'
+      rotina: '📋 Rotina Visível: Quando possível, deixe claro o que acontecerá durante a aula usando uma sequência no quadro.',
+      instrucao: '💬 Instruções Claras: Apresente orientações de maneira objetiva e divida tarefas complexas em etapas menores.',
+      ambiente: '🎧 Controle de Estímulos: Observe se barulho, iluminação ou excesso de estímulos estão dificultando a participação.',
+      participacao: '🤝 Múltiplas Participações: Nem todos os estudantes se expressam oralmente. Permita respostas escritas ou em duplas.',
+      mudancas: '⚠️ Antecipação de Mudanças: Avise previamente alterações na rotina escolar para diminuir inseguranças.',
+      apoio: '🆘 Canal de Apoio: Combine previamente maneiras pelas quais o estudante pode comunicar que precisa de ajuda ou de uma pausa discreta.'
     };
-    document.querySelectorAll('.room-point').forEach(pt => {
+
+    roomPoints.forEach(pt => {
       pt.addEventListener('click', () => {
+        roomPoints.forEach(p => p.style.transform = 'scale(1)');
+        pt.style.transform = 'scale(1.25)';
         const id = pt.dataset.id;
         roomInfo.innerHTML = `<p>${infoTexts[id]}</p>`;
       });
     });
+
+    // Interactive Checklist logic
+    const checklistInputs = document.querySelectorAll('#teacher-checklist input[type="checkbox"]');
+    const resetChecklistBtn = document.getElementById('reset-checklist');
+
+    checklistInputs.forEach(input => {
+      input.addEventListener('change', () => {
+        const li = input.closest('li');
+        if (input.checked) {
+          li.classList.add('checked');
+        } else {
+          li.classList.remove('checked');
+        }
+      });
+    });
+
+    if (resetChecklistBtn) {
+      resetChecklistBtn.addEventListener('click', () => {
+        checklistInputs.forEach(input => {
+          input.checked = false;
+          input.closest('li').classList.remove('checked');
+        });
+      });
+    }
   </script>
 </body>
 </html>

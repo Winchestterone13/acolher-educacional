@@ -245,16 +245,16 @@
       </div>
     </section>
 
-    <!-- 6. Rede de Apoio Compartilhada -->
+    <!-- 6. Rede de Apoio Compartilhada e Canais Oficiais -->
     <section class="section" id="rede-apoio">
       <div class="support-network">
-        <span class="section-badge">Cuidado Coletivo</span>
+        <span class="section-badge purple">Cuidado Coletivo e Serviços Públicos</span>
         <h2>Você não precisa enfrentar tudo sozinho</h2>
         <p class="section-description">
-          Apoio emocional e inclusão se constroem em rede. Identifique seus pontos de confiança:
+          Apoio emocional e inclusão se constroem em rede. Conheça as conexões e os serviços públicos gratuitos disponíveis para você e sua família:
         </p>
 
-        <div class="network-graph">
+        <div class="network-graph" aria-label="Diagrama da rede de apoio comunitária">
           <div class="node central">Você</div>
           <div class="node">👨‍👩‍👦 Família ou Responsável</div>
           <div class="node">🧑‍🏫 Professor de Confiança</div>
@@ -263,27 +263,156 @@
           <div class="node">🏥 Rede Pública de Saúde (CAPS/UBS)</div>
         </div>
 
-        <p style="color:var(--text-muted); font-size:0.95rem; max-width:650px; margin:0 auto;">
-          Quando o sofrimento for intenso ou persistente, procurar a orientação pedagógica da escola ou um serviço de saúde de referência é o caminho mais seguro e responsável.
-        </p>
+        <!-- Aviso de Projeto Comunitário Informativo -->
+        <div class="community-disclaimer" style="text-align:left; margin-top:2.5rem;">
+          <div class="disclaimer-icon" aria-hidden="true">💡</div>
+          <div>
+            <h3>Projeto Comunitário Informativo</h3>
+            <p>
+              O portal <strong>Acolher</strong> é uma iniciativa comunitária de caráter estritamente educativo e informativo. 
+              <strong>Não realizamos atendimento individual direto, triagem clínica ou intervenção psicológica.</strong> 
+              Caso você, um estudante ou familiar esteja precisando de acolhimento imediato, orientação técnica ou proteção, utilize diretamente os <strong>canais governamentais e públicos gratuitos</strong> abaixo:
+            </p>
+          </div>
+        </div>
+
+        <!-- Canais Governamentais e Gratuitos -->
+        <div class="helpline-grid" style="text-align:left;">
+          <!-- CVV -->
+          <article class="helpline-card cvv">
+            <div class="helpline-card-header">
+              <h3><span>💙</span> CVV – Apoio Emocional</h3>
+              <span class="helpline-badge">24 Horas • Gratuito</span>
+            </div>
+            <div class="helpline-phone" aria-label="Telefone 188">
+              <span aria-hidden="true">📞</span> 188
+            </div>
+            <p class="helpline-desc">
+              Atendimento gratuito e sigiloso por telefone e chat online para todas as pessoas que querem e precisam conversar, sob total confidencialidade.
+            </p>
+            <ul class="helpline-details">
+              <li>✓ Ligação gratuita para todo o Brasil (fixo e celular)</li>
+              <li>✓ Chat online disponível 24h por dia</li>
+            </ul>
+            <div class="helpline-actions">
+              <a href="https://cvv.org.br/chat/" target="_blank" rel="noopener noreferrer" class="btn-helpline-primary">
+                Chat Oficial CVV ↗
+              </a>
+              <a href="tel:188" class="btn-helpline-secondary">
+                Ligar 188
+              </a>
+            </div>
+          </article>
+
+          <!-- Disque 100 -->
+          <article class="helpline-card disque100">
+            <div class="helpline-card-header">
+              <h3><span>🛡️</span> Disque 100 – Direitos Humanos</h3>
+              <span class="helpline-badge">Governo Federal • 24h</span>
+            </div>
+            <div class="helpline-phone" aria-label="Telefone 100">
+              <span aria-hidden="true">📞</span> 100
+            </div>
+            <p class="helpline-desc">
+              Canal oficial do Ministério dos Direitos Humanos e da Cidadania para orientações e denúncias de violações de direitos de crianças, adolescentes e pessoas autistas.
+            </p>
+            <ul class="helpline-details">
+              <li>✓ Atendimento gratuito, anônimo e nacional</li>
+              <li>✓ Atendimento via WhatsApp oficial e portal Gov.br</li>
+            </ul>
+            <div class="helpline-actions">
+              <a href="https://www.gov.br/mdh/pt-br/canais_atendimento/ouvidoria/disque-100" target="_blank" rel="noopener noreferrer" class="btn-helpline-primary">
+                Portal Gov.br Disque 100 ↗
+              </a>
+              <a href="https://wa.me/5561996565008" target="_blank" rel="noopener noreferrer" class="btn-helpline-secondary">
+                WhatsApp Oficial (61) 99656-5008 ↗
+              </a>
+            </div>
+          </article>
+
+          <!-- SUS CAPS e UBS -->
+          <article class="helpline-card sus">
+            <div class="helpline-card-header">
+              <h3><span>🏥</span> SUS – Rede de Saúde Mental</h3>
+              <span class="helpline-badge">Saúde Pública • SUS</span>
+            </div>
+            <div class="helpline-phone" aria-label="Disque Saúde 136">
+              <span aria-hidden="true">📞</span> 136
+            </div>
+            <p class="helpline-desc">
+              Centros de Atenção Psicossocial Infantojuvenil (CAPSi) e Unidades Básicas de Saúde (UBS) acolhem presencialmente sem necessidade de agendamento prévio.
+            </p>
+            <ul class="helpline-details">
+              <li>✓ Atendimento público e 100% gratuito</li>
+              <li>✓ Equipes multidisciplinares especializadas</li>
+            </ul>
+            <div class="helpline-actions">
+              <a href="https://www.gov.br/saude/pt-br" target="_blank" rel="noopener noreferrer" class="btn-helpline-primary">
+                Portal Ministério da Saúde ↗
+              </a>
+              <a href="tel:136" class="btn-helpline-secondary">
+                Disque Saúde 136
+              </a>
+            </div>
+          </article>
+
+          <!-- SaferNet -->
+          <article class="helpline-card safernet">
+            <div class="helpline-card-header">
+              <h3><span>🌐</span> SaferNet – Canal de Ajuda</h3>
+              <span class="helpline-badge">Apoio na Web • Gratuito</span>
+            </div>
+            <div class="helpline-phone" style="font-size:1.15rem;">
+              <span aria-hidden="true">💬</span> Chat Anônimo
+            </div>
+            <p class="helpline-desc">
+              Ajuda psicológica e jurídica para crianças, adolescentes e educadores diante de humilhações, cyberbullying, chantagens e perigos nas redes sociais.
+            </p>
+            <ul class="helpline-details">
+              <li>✓ Atendimento anônimo via chat no navegador</li>
+              <li>✓ Especialistas em segurança digital e saúde mental</li>
+            </ul>
+            <div class="helpline-actions">
+              <a href="https://new.safernet.org.br/helpline" target="_blank" rel="noopener noreferrer" class="btn-helpline-primary">
+                Chat da SaferNet ↗
+              </a>
+            </div>
+          </article>
+        </div>
       </div>
     </section>
 
-    <!-- 7. Fontes e Referências -->
+    <!-- 7. Fontes e Referências Oficiais -->
     <section class="section" id="fontes">
       <div class="section-header">
         <span class="section-badge">Bases Científicas e Oficiais</span>
         <h2>Fontes e Referências Confiáveis</h2>
         <p class="section-description">
-          Informações fundamentadas em diretrizes educacionais e de saúde pública:
+          Informações fundamentadas em diretrizes educacionais e de saúde pública de órgãos oficiais:
         </p>
       </div>
 
       <ul class="sources-list">
-        <li>Ministério da Educação (MEC / INEP)</li>
-        <li>Ministério da Saúde do Brasil</li>
-        <li>UNICEF Brasil – Educação Inclusiva</li>
-        <li>Organização Mundial da Saúde (OMS)</li>
+        <li>
+          <a href="https://www.gov.br/mec/pt-br" target="_blank" rel="noopener noreferrer" style="color:inherit; display:flex; align-items:center; gap:0.5rem; width:100%;">
+            Ministério da Educação (MEC / INEP) ↗
+          </a>
+        </li>
+        <li>
+          <a href="https://www.gov.br/saude/pt-br" target="_blank" rel="noopener noreferrer" style="color:inherit; display:flex; align-items:center; gap:0.5rem; width:100%;">
+            Ministério da Saúde do Brasil ↗
+          </a>
+        </li>
+        <li>
+          <a href="https://www.unicef.org/brazil/" target="_blank" rel="noopener noreferrer" style="color:inherit; display:flex; align-items:center; gap:0.5rem; width:100%;">
+            UNICEF Brasil – Educação Inclusiva ↗
+          </a>
+        </li>
+        <li>
+          <a href="https://www.who.int/pt" target="_blank" rel="noopener noreferrer" style="color:inherit; display:flex; align-items:center; gap:0.5rem; width:100%;">
+            Organização Mundial da Saúde (OMS) ↗
+          </a>
+        </li>
       </ul>
     </section>
   </main>
