@@ -4,40 +4,37 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Acolher – Plataforma Educacional sobre Autismo, Inclusão e Saúde Mental</title>
-  <meta name="description" content="Informações acessíveis e confiáveis sobre autismo, inclusão escolar e acolhimento para estudantes, professores e famílias." />
+  <title>Acolher – Autismo, Professores e Rede de Apoio</title>
+  <meta name="description" content="Informações sobre autismo, práticas inclusivas para professores e rede de apoio à comunidade escolar." />
   <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com data:; img-src 'self' data: https:; connect-src 'self'; frame-src 'none';" />
   <meta http-equiv="X-Content-Type-Options" content="nosniff" />
   <meta http-equiv="Referrer-Policy" content="strict-origin-when-cross-origin" />
   <link rel="stylesheet" href="assets/css/design.css" />
-  <link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg" />
-  <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32x32.png" />
-  <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon-16x16.png" />
-  <link rel="apple-touch-icon" sizes="180x180" href="assets/img/apple-touch-icon.png" />
-  <link rel="shortcut icon" href="favicon.ico" />
+  <link rel="icon" type="image/png" sizes="256x256" href="assets/img/acolher-simbolo.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/img/acolher-apple-touch.png" />
+  <link rel="shortcut icon" href="favicon.ico?v=acolher-2" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/refinements.css" />
 </head>
 
 <body>
   <!-- Header Principal com Navegação e Acessibilidade -->
   <header class="site-header" role="banner">
     <div class="logo-wrapper">
-      <a href="./" class="logo" aria-label="Acolher - Página inicial">
-        <div class="logo-icon" aria-hidden="true">💙</div>
-        Acolher
-        <span>Educação</span>
+      <a href="index.html" class="logo" aria-label="Acolher - Página inicial">
+        <img class="brand-symbol" src="assets/img/acolher-simbolo.png" alt="" width="56" height="56" />
+        <strong class="brand-name">Acolher</strong>
+        <span class="brand-tag">Educação</span>
       </a>
     </div>
 
     <nav aria-label="Menu principal">
       <ul class="nav-list">
-        <li><a href="./" class="nav-link active" aria-current="page">Início</a></li>
-        <li><a href="autismo" class="nav-link">Autismo</a></li>
-        <li><a href="professores" class="nav-link">Professores</a></li>
-        <li><a href="estudantes" class="nav-link">Estudantes</a></li>
-        <li><a href="#saude-mental" class="nav-link">Saúde Mental</a></li>
+        <li><a href="index.html" class="nav-link active" aria-current="page">Início</a></li>
+        <li><a href="autismo.html" class="nav-link">Autismo</a></li>
+        <li><a href="professores.html" class="nav-link">Professores</a></li>
         <li><a href="#rede-apoio" class="nav-link">Rede de Apoio</a></li>
       </ul>
     </nav>
@@ -53,14 +50,15 @@
   <main id="conteudo-principal">
     <section class="hero" id="hero">
       <div class="hero-text">
-        <span class="subtitle">Educação • Inclusão • Bem-estar</span>
+        <span class="subtitle">Autismo • Educação • Inclusão</span>
         <h1>Informação também é uma forma de acolher.</h1>
         <p class="description">
-          Uma plataforma acessível para aproximar estudantes, professores e famílias, oferecendo caminhos práticos para construir uma escola mais empática, compreensiva e inclusiva.
+          Conheça o autismo, explore práticas inclusivas para professores e encontre a rede de apoio. Informação e parceria para aproximar escola, famílias e comunidade.
         </p>
         <div class="hero-buttons">
-          <a href="estudantes" class="btn primary">Sou estudante</a>
-          <a href="professores" class="btn secondary">Sou professor ou educador</a>
+          <a href="autismo.html" class="btn primary">Entender o autismo</a>
+          <a href="professores.html" class="btn secondary">Sou professor ou educador</a>
+          <a href="#rede-apoio" class="btn outline">Conhecer a rede de apoio</a>
         </div>
       </div>
       <div class="hero-illustration">
@@ -71,39 +69,32 @@
     <!-- 1. Para quem é o Acolher -->
     <section class="section" id="para-quem">
       <div class="section-header">
-        <span class="section-badge">Público-Alvo</span>
-        <h2>Um espaço construído para toda a comunidade escolar</h2>
+        <span class="section-badge">Por onde começar</span>
+        <h2>Três caminhos para uma escola mais inclusiva</h2>
         <p class="section-description">
-          A inclusão é uma construção coletiva. Encontre conteúdos preparados para sua realidade:
+          Comece pela compreensão do autismo, leve as orientações para a sala de aula e fortaleça a parceria com a rede de apoio:
         </p>
       </div>
 
       <div class="audience-grid">
-        <article class="audience-card">
-          <div class="icon-box" aria-hidden="true">🎒</div>
-          <h3>Estudantes</h3>
-          <p>Entenda melhor suas emoções, saiba como lidar com a sobrecarga, comunique o que sente e descubra quem pode te apoiar.</p>
-          <a href="estudantes" class="btn outline">Guia do Estudante →</a>
+        <article class="audience-card amber">
+          <div class="icon-box" aria-hidden="true">🧩</div>
+          <h3>Autismo (TEA)</h3>
+          <p>Compreenda o espectro com clareza, desmistifique estigmas e conheça as diferentes formas de comunicação e sensorialidade.</p>
+          <a href="autismo.html" class="btn outline">Conhecer o Espectro →</a>
         </article>
 
         <article class="audience-card teal">
           <div class="icon-box" aria-hidden="true">📚</div>
           <h3>Professores</h3>
           <p>Estratégias pedagógicas práticas, planejamento de ambiente sensorial, previsibilidade e orientações para situações reais.</p>
-          <a href="professores" class="btn outline">Guia do Professor →</a>
-        </article>
-
-        <article class="audience-card amber">
-          <div class="icon-box" aria-hidden="true">🧩</div>
-          <h3>Autismo (TEA)</h3>
-          <p>Compreenda o espectro com clareza, desmistifique estigmas e conheça as diferentes formas de comunicação e sensorialidade.</p>
-          <a href="autismo" class="btn outline">Conhecer o Espectro →</a>
+          <a href="professores.html" class="btn outline">Guia do Professor →</a>
         </article>
 
         <article class="audience-card purple">
           <div class="icon-box" aria-hidden="true">🤝</div>
-          <h3>Família e Comunidade</h3>
-          <p>Orientações para fortalecer o diálogo entre casa e escola e identificar serviços de apoio psicossocial.</p>
+          <h3>Rede de Apoio</h3>
+          <p>Fortaleça o diálogo entre escola, família e profissionais e conheça os serviços de cuidado e proteção de direitos.</p>
           <a href="#rede-apoio" class="btn outline">Ver Rede de Apoio →</a>
         </article>
       </div>
@@ -120,7 +111,7 @@
               O Transtorno do Espectro Autista (TEA) é uma condição do neurodesenvolvimento com manifestações únicas em cada indivíduo.
             </p>
           </div>
-          <a href="autismo" class="btn primary">Aprender mais sobre o autismo →</a>
+          <a href="autismo.html" class="btn primary">Aprender mais sobre o autismo →</a>
         </div>
 
         <div class="cards-grid small">
@@ -162,59 +153,11 @@
             <li><span class="icon">🎧</span> Respeito aos momentos de pausa sensorial</li>
             <li><span class="icon">🤝</span> Parceria constante com a família e equipe escolar</li>
           </ul>
-          <a href="professores" class="btn secondary">Ver estratégias detalhadas para professores →</a>
+          <a href="professores.html" class="btn secondary">Ver estratégias detalhadas para professores →</a>
         </div>
         <div>
           <img src="assets/img/teacher-illustration.svg" alt="Ilustração com rotina visual e práticas pedagógicas" />
         </div>
-      </div>
-    </section>
-
-    <!-- 4. Saúde Mental e Checagem Emocional -->
-    <section class="section" id="saude-mental">
-      <div class="mental-health-widget">
-        <span class="section-badge purple">Saúde Mental e Bem-Estar</span>
-        <h2>Como você está se sentindo hoje?</h2>
-<p class="content-note">As mensagens são recursos educativos autorais de reflexão, sem validação como teste psicológico. Cada pessoa pode precisar de formas diferentes de apoio.</p>
-        <p class="section-description">
-          Reconhecer o que sentimos é o primeiro passo para o autocuidado. Selecione uma emoção para receber uma reflexão acolhedora:
-        </p>
-
-        <div class="emotion-grid" role="group" aria-label="Seletor de estado emocional">
-          <button class="emotion-btn" data-mood="bem" aria-label="Estou bem">
-            <span class="emoji" aria-hidden="true">😊</span>
-            <span>Estou bem</span>
-          </button>
-          <button class="emotion-btn" data-mood="preocupado" aria-label="Estou preocupado">
-            <span class="emoji" aria-hidden="true">😟</span>
-            <span>Preocupado</span>
-          </button>
-          <button class="emotion-btn" data-mood="ansioso" aria-label="Estou ansioso">
-            <span class="emoji" aria-hidden="true">😰</span>
-            <span>Ansioso</span>
-          </button>
-          <button class="emotion-btn" data-mood="triste" aria-label="Estou triste">
-            <span class="emoji" aria-hidden="true">😢</span>
-            <span>Triste</span>
-          </button>
-          <button class="emotion-btn" data-mood="sobrecarregado" aria-label="Estou sobrecarregado">
-            <span class="emoji" aria-hidden="true">😵</span>
-            <span>Sobrecarregado</span>
-          </button>
-          <button class="emotion-btn" data-mood="conversar" aria-label="Preciso conversar">
-            <span class="emoji" aria-hidden="true">🗣️</span>
-            <span>Preciso falar</span>
-          </button>
-        </div>
-
-        <div id="emotion-feedback" class="emotion-feedback-card" style="display: none;" aria-live="polite">
-          <h4 id="feedback-title">Reflexão</h4>
-          <p id="feedback-text"></p>
-        </div>
-
-        <p class="disclaimer">
-          Aviso importante: Esta ferramenta tem finalidade exclusivamente educativa e reflexiva, não substituindo diagnóstico médico ou acompanhamento psicológico.
-        </p>
       </div>
     </section>
 
@@ -249,6 +192,10 @@
           <p>Combine sinais discretos com o estudante (um cartão colorido, um bilhete ou gesto combinado) para avisar quando precisar de apoio.</p>
         </article>
       </div>
+      <div class="continuation-actions">
+        <a href="professores.html#situacoes" class="btn secondary">Explorar a central de situações para professores →</a>
+        <a href="#rede-apoio" class="btn outline">Conhecer a rede de apoio →</a>
+      </div>
     </section>
 
     <!-- 6. Rede de Apoio Compartilhada e Canais Oficiais -->
@@ -258,7 +205,7 @@
         <h2>Você não precisa enfrentar tudo sozinho</h2>
 <p class="content-note">Se houver perigo imediato, acione um serviço de emergência e um adulto de confiança. Os canais de orientação e apoio emocional não substituem o atendimento de urgência.</p>
         <p class="section-description">
-          Apoio emocional e inclusão se constroem em rede. Conheça as conexões e os serviços públicos gratuitos disponíveis para você e sua família:
+          A inclusão se fortalece quando escola, família e serviços trabalham juntos. Conheça sua rede de confiança e os canais de cuidado e proteção disponíveis:
         </p>
 
         <div class="network-graph" aria-label="Diagrama da rede de apoio comunitária">
@@ -340,7 +287,7 @@
           <!-- SUS CAPS e UBS -->
           <article class="helpline-card sus">
             <div class="helpline-card-header">
-              <h3><span>🏥</span> SUS – Rede de Saúde Mental</h3>
+              <h3><span>🏥</span> SUS – Rede de Cuidado</h3>
               <span class="helpline-badge">Saúde Pública • SUS</span>
             </div>
             <div class="helpline-phone" aria-label="OuvSUS 136 — informações e manifestações">
@@ -387,34 +334,36 @@
           </article>
         </div>
       </div>
+      <p class="content-note">Informações dos serviços consultadas em 19 de outubro de 2026. Confira as condições atuais nos sites oficiais. <a href="referencias.html#R19">Ver as fontes sobre a rede de apoio →</a></p>
     </section>
 
     <!-- 7. Fontes e Referências Oficiais -->
-    <section class="section" id="fontes"><h2>Fontes e referências</h2><p>Referências para os temas desta página. Os exemplos, cartões e checklists do Acolher são recursos educativos autorais, sem validação como instrumentos psicológicos. Consulta: 19 de outubro de 2026.</p><ul><li style="margin-bottom:1rem"><a href="referencias.html#R01">WORLD HEALTH ORGANIZATION. Autism. 17 set. 2025.</a></li><li style="margin-bottom:1rem"><a href="referencias.html#R06">BRASIL. Ministério da Saúde. Linha de cuidado para pessoas com transtorno do espectro autista — TEA. Brasília: Ministério da Saúde, 2025. ISBN 978-65-5993-884-1.</a></li><li style="margin-bottom:1rem"><a href="referencias.html#R08">UNICEF; INSTITUTO VITA ALERE. Saúde mental de adolescentes e jovens. 2021.</a></li><li style="margin-bottom:1rem"><a href="referencias.html#R04">CAST. CAST Universal Design for Learning Guidelines, version 3.0. 2024.</a></li></ul><p><a class="btn primary" href="referencias.html">Ver e copiar todas as referências →</a></p></section>
+    <section class="section" id="fontes"><h2>Fontes e referências</h2><p>Referências para os temas desta página. Os exemplos, cartões e checklists do Acolher são recursos educativos autorais, sem validação como instrumentos psicológicos. Consulta: 19 de outubro de 2026.</p><ul><li style="margin-bottom:1rem"><a href="referencias.html#R01">WORLD HEALTH ORGANIZATION. Autism. 17 set. 2025.</a></li><li style="margin-bottom:1rem"><a href="referencias.html#R06">BRASIL. Ministério da Saúde. Linha de cuidado para pessoas com transtorno do espectro autista — TEA. Brasília: Ministério da Saúde, 2025. ISBN 978-65-5993-884-1.</a></li><li style="margin-bottom:1rem"><a href="referencias.html#R04">CAST. CAST Universal Design for Learning Guidelines, version 3.0. 2024.</a></li></ul><p><a class="btn primary" href="referencias.html">Ver e copiar todas as referências →</a></p></section>
   </main>
 
   <!-- Rodapé Institucional -->
   <footer class="site-footer" role="contentinfo">
     <div class="footer-grid">
       <div class="footer-section">
-        <h3>Acolher</h3>
-        <p>Projeto acadêmico sobre tecnologia educacional voltado à inclusão, autismo e acolhimento da saúde mental no ambiente escolar.</p>
+        <a href="index.html" class="logo footer-brand" aria-label="Acolher - Página inicial"><img class="brand-symbol" src="assets/img/acolher-simbolo.png" alt="" width="56" height="56" />
+        <strong class="brand-name">Acolher</strong>
+        <span class="brand-tag">Educação</span></a>
+        <p>Projeto acadêmico sobre autismo, práticas inclusivas para professores e rede de apoio à comunidade escolar.</p>
       </div>
 
       <div class="footer-section">
         <h3>Conteúdos</h3>
         <ul>
-          <li><a href="autismo">Guia sobre Autismo</a></li>
-          <li><a href="professores">Guia para Professores</a></li>
-          <li><a href="estudantes">Espaço do Estudante</a></li>
-          <li><a href="#saude-mental">Saúde Mental</a></li>
+          <li><a href="autismo.html">Guia sobre Autismo</a></li>
+          <li><a href="professores.html">Guia para Professores</a></li>
+          <li><a href="#rede-apoio">Rede de Apoio</a></li>
         </ul>
       </div>
 
       <div class="footer-section">
         <h3>Para Navegar</h3>
         <ul>
-          <li><a href="#para-quem">Para quem é o site</a></li>
+          <li><a href="#para-quem">Caminhos do Acolher</a></li>
           <li><a href="#situacoes-cotidiano">Situações do cotidiano</a></li>
           <li><a href="#rede-apoio">Rede de apoio</a></li>
           <li><a href="#fontes">Fontes e referências</a></li>
@@ -435,53 +384,6 @@
   </footer>
 
   <script src="assets/js/script.js"></script>
-  <script>
-    // Interação do widget de humor / saúde mental na home
-    const emotionFeedbackMap = {
-      bem: {
-        title: "Que bom que você está bem! ☀️",
-        text: "Aproveite esse momento para cultivar atividades que você gosta e, se puder, ofereça uma palavra de apoio a um colega que esteja precisando."
-      },
-      preocupado: {
-        title: "Preocupações fazem parte do dia a dia 💭",
-        text: "Tente anotar em um papel o que está sob o seu controle e o que foge dele. Conversar com alguém de confiança ajuda a clarear os pensamentos."
-      },
-      ansioso: {
-        title: "Respire com calma no seu próprio tempo 🫁",
-        text: "A ansiedade pode deixar o corpo em alerta. Se for confortável, perceba os pés apoiados no chão e respire devagar, sem forçar. Procure apoio se o sofrimento for intenso ou persistente."
-      },
-      triste: {
-        title: "A tristeza é legítima e merece acolhimento 💙",
-        text: "Não precisa fingir que está tudo bem o tempo todo. Respeite seu ritmo e lembre-se de que conversar com alguém de confiança pode ajudar."
-      },
-      sobrecarregado: {
-        title: "Muitas coisas ao mesmo tempo? 🛑",
-        text: "Pare por alguns instantes. Se o ambiente estiver barulhento ou cheio, tente se afastar para um espaço mais calmo. Divida suas tarefas em etapas bem pequenas."
-      },
-      conversar: {
-        title: "Pedir ajuda é sinal de coragem 🤝",
-        text: "Procure um professor, orientador pedagógico, amigo ou familiar de sua confiança. Dizer 'não estou bem e gostaria de conversar' é um excelente primeiro passo."
-      }
-    };
-
-    const emotionBtns = document.querySelectorAll('.emotion-btn');
-    const feedbackBox = document.getElementById('emotion-feedback');
-    const feedbackTitle = document.getElementById('feedback-title');
-    const feedbackText = document.getElementById('feedback-text');
-
-    emotionBtns.forEach(btn => {
-      btn.addEventListener('click', () => {
-        emotionBtns.forEach(b => b.classList.remove('active'));
-        btn.classList.add('active');
-        const mood = btn.dataset.mood;
-        if (emotionFeedbackMap[mood]) {
-          feedbackTitle.textContent = emotionFeedbackMap[mood].title;
-          feedbackText.textContent = emotionFeedbackMap[mood].text;
-          feedbackBox.style.display = 'block';
-        }
-      });
-    });
-  </script>
 </body>
 
 </html>

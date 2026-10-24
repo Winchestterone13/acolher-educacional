@@ -1561,3 +1561,32 @@ p.lead {
     gap: 0.5rem;
   }
 }
+
+/* Continuidade entre os conteúdos, mantendo os componentes visuais do projeto. */
+.continuation-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+.continuation .audience-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+.section[id], .continuation h2 {
+  scroll-margin-top: 7rem;
+}
+@media (min-width: 769px) and (max-width: 1100px) {
+  .site-header { flex-wrap: wrap; }
+  .site-header nav { order: 3; flex-basis: 100%; }
+  .site-header .nav-list { justify-content: center; }
+}
+@media (max-width: 768px) {
+  .continuation .audience-grid { grid-template-columns: 1fr; }
+  .section[id], .continuation h2 { scroll-margin-top: 15rem; }
+}
+
+/* O exemplo de registro mantém as quebras e se adapta à largura disponível. */
+.record-example {
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+}

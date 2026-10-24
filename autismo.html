@@ -9,34 +9,31 @@
   <meta http-equiv="Referrer-Policy" content="strict-origin-when-cross-origin" />
   <link rel="stylesheet" href="assets/css/design.css" />
   <link rel="stylesheet" href="assets/css/style.css" />
-  <link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg" />
-  <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32x32.png" />
-  <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon-16x16.png" />
-  <link rel="apple-touch-icon" sizes="180x180" href="assets/img/apple-touch-icon.png" />
-  <link rel="shortcut icon" href="favicon.ico" />
+  <link rel="icon" type="image/png" sizes="256x256" href="assets/img/acolher-simbolo.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/img/acolher-apple-touch.png" />
+  <link rel="shortcut icon" href="favicon.ico?v=acolher-2" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/refinements.css" />
 </head>
 <body>
   <!-- Header Principal com Navegação e Acessibilidade -->
   <header class="site-header" role="banner">
     <div class="logo-wrapper">
-      <a href="./" class="logo" aria-label="Acolher - Página inicial">
-        <div class="logo-icon" aria-hidden="true">💙</div>
-        Acolher
-        <span>Educação</span>
+      <a href="index.html" class="logo" aria-label="Acolher - Página inicial">
+        <img class="brand-symbol" src="assets/img/acolher-simbolo.png" alt="" width="56" height="56" />
+        <strong class="brand-name">Acolher</strong>
+        <span class="brand-tag">Educação</span>
       </a>
     </div>
 
     <nav aria-label="Menu principal">
       <ul class="nav-list">
-        <li><a href="./" class="nav-link">Início</a></li>
-        <li><a href="autismo" class="nav-link active" aria-current="page">Autismo</a></li>
-        <li><a href="professores" class="nav-link">Professores</a></li>
-        <li><a href="estudantes" class="nav-link">Estudantes</a></li>
-        <li><a href="./#saude-mental" class="nav-link">Saúde Mental</a></li>
-        <li><a href="./#rede-apoio" class="nav-link">Rede de Apoio</a></li>
+        <li><a href="index.html" class="nav-link">Início</a></li>
+        <li><a href="autismo.html" class="nav-link active" aria-current="page">Autismo</a></li>
+        <li><a href="professores.html" class="nav-link">Professores</a></li>
+        <li><a href="index.html#rede-apoio" class="nav-link">Rede de Apoio</a></li>
       </ul>
     </nav>
 
@@ -358,7 +355,7 @@
       </article>
     </div>
 
-    <a href="./#rede-apoio" class="btn primary">Conhecer serviços e organizações de apoio →</a>
+    <a href="index.html#rede-apoio" class="btn primary">Conhecer serviços e organizações de apoio →</a>
   </section>
 
   <!-- 13. Aviso educativo -->
@@ -372,11 +369,35 @@
   <!-- 14. Fontes -->
   <section class="section" id="fontes"><h2>Fontes e referências</h2><p>Referências para os temas desta página. Os exemplos, cartões e checklists do Acolher são recursos educativos autorais, sem validação como instrumentos psicológicos. Consulta: 19 de outubro de 2026.</p><ul><li style="margin-bottom:1rem"><a href="referencias.html#R01">WORLD HEALTH ORGANIZATION. Autism. 17 set. 2025.</a></li><li style="margin-bottom:1rem"><a href="referencias.html#R03">STEINBRENNER, Jessica R. et al. Evidence-based practices for children, youth, and young adults with autism. Chapel Hill: University of North Carolina, Frank Porter Graham Child Development Institute, National Clearinghouse on Autism Evidence and Practice, 2020.</a></li><li style="margin-bottom:1rem"><a href="referencias.html#R05">BRASIL. Ministério da Saúde. Diretrizes de atenção à reabilitação da pessoa com transtornos do espectro do autismo (TEA). Brasília: Ministério da Saúde, 2014.</a></li><li style="margin-bottom:1rem"><a href="referencias.html#R06">BRASIL. Ministério da Saúde. Linha de cuidado para pessoas com transtorno do espectro autista — TEA. Brasília: Ministério da Saúde, 2025. ISBN 978-65-5993-884-1.</a></li><li style="margin-bottom:1rem"><a href="referencias.html#R10">BRASIL. Lei nº 13.146, de 6 de julho de 2015. Lei Brasileira de Inclusão da Pessoa com Deficiência.</a></li><li style="margin-bottom:1rem"><a href="referencias.html#R11">BRASIL. Lei nº 12.764, de 27 de dezembro de 2012. Política Nacional de Proteção dos Direitos da Pessoa com Transtorno do Espectro Autista.</a></li><li style="margin-bottom:1rem"><a href="referencias.html#R12">BRASIL. Lei nº 13.977, de 8 de janeiro de 2020. Lei Romeo Mion.</a></li><li style="margin-bottom:1rem"><a href="referencias.html#R15">BRASIL. Lei nº 7.853, de 24 de outubro de 1989.</a></li></ul><p><a class="btn primary" href="referencias.html">Ver e copiar todas as referências →</a></p></section>
 
+
+  <section class="section continuation" aria-labelledby="continuar-titulo">
+    <div class="section-header">
+      <span class="section-badge">Continue pelo Acolher</span>
+      <h2 id="continuar-titulo">Compreender, colocar em prática e apoiar</h2>
+      <p class="section-description">Leve o que aprendeu para o cotidiano da escola e conheça os caminhos para construir apoio em conjunto.</p>
+    </div>
+    <div class="audience-grid">
+        <article class="audience-card teal">
+          <div class="icon-box" aria-hidden="true">📚</div>
+          <h3>Práticas para professores</h3>
+          <p>Explore comunicação acessível, organização da sala e situações do cotidiano.</p>
+          <a href="professores.html" class="btn outline">Conhecer as práticas inclusivas →</a>
+        </article>
+        <article class="audience-card purple">
+          <div class="icon-box" aria-hidden="true">🤝</div>
+          <h3>Rede de apoio</h3>
+          <p>Encontre serviços de cuidado, orientação e proteção de direitos.</p>
+          <a href="index.html#rede-apoio" class="btn outline">Conhecer a rede de apoio →</a>
+        </article>
+    </div>
+  </section>
   <footer class="site-footer" aria-label="Rodapé">
     <div class="footer-grid">
       <div class="footer-section">
-        <h3>Acolher</h3>
-        <p>Plataforma de apoio educacional focada em inclusão, autismo e saúde mental.</p>
+        <a href="index.html" class="logo footer-brand" aria-label="Acolher - Página inicial"><img class="brand-symbol" src="assets/img/acolher-simbolo.png" alt="" width="56" height="56" />
+        <strong class="brand-name">Acolher</strong>
+        <span class="brand-tag">Educação</span></a>
+        <p>Plataforma educacional sobre autismo, inclusão escolar e rede de apoio.</p>
       </div>
       <div class="footer-section">
         <h3>Conteúdos</h3>
@@ -389,9 +410,8 @@
       <div class="footer-section">
         <h3>Para Você</h3>
         <ul>
-          <li><a href="estudantes">Estudantes</a></li>
-          <li><a href="professores">Professores</a></li>
-          <li><a href="./#rede-apoio">Rede de apoio</a></li>
+          <li><a href="professores.html">Professores</a></li>
+          <li><a href="index.html#rede-apoio">Rede de apoio</a></li>
         </ul>
       </div>
       <div class="footer-section">

@@ -9,34 +9,31 @@
   <meta http-equiv="Referrer-Policy" content="strict-origin-when-cross-origin" />
   <link rel="stylesheet" href="assets/css/design.css" />
   <link rel="stylesheet" href="assets/css/style.css" />
-  <link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg" />
-  <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32x32.png" />
-  <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon-16x16.png" />
-  <link rel="apple-touch-icon" sizes="180x180" href="assets/img/apple-touch-icon.png" />
-  <link rel="shortcut icon" href="favicon.ico" />
+  <link rel="icon" type="image/png" sizes="256x256" href="assets/img/acolher-simbolo.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/img/acolher-apple-touch.png" />
+  <link rel="shortcut icon" href="favicon.ico?v=acolher-2" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/refinements.css" />
 </head>
 <body>
   <!-- Header Principal com Navegação e Acessibilidade -->
   <header class="site-header" role="banner">
     <div class="logo-wrapper">
-      <a href="./" class="logo" aria-label="Acolher - Página inicial">
-        <div class="logo-icon" aria-hidden="true">💙</div>
-        Acolher
-        <span>Educação</span>
+      <a href="index.html" class="logo" aria-label="Acolher - Página inicial">
+        <img class="brand-symbol" src="assets/img/acolher-simbolo.png" alt="" width="56" height="56" />
+        <strong class="brand-name">Acolher</strong>
+        <span class="brand-tag">Educação</span>
       </a>
     </div>
 
     <nav aria-label="Menu principal">
       <ul class="nav-list">
-        <li><a href="./" class="nav-link">Início</a></li>
-        <li><a href="autismo" class="nav-link">Autismo</a></li>
-        <li><a href="professores" class="nav-link active" aria-current="page">Professores</a></li>
-        <li><a href="estudantes" class="nav-link">Estudantes</a></li>
-        <li><a href="./#saude-mental" class="nav-link">Saúde Mental</a></li>
-        <li><a href="./#rede-apoio" class="nav-link">Rede de Apoio</a></li>
+        <li><a href="index.html" class="nav-link">Início</a></li>
+        <li><a href="autismo.html" class="nav-link">Autismo</a></li>
+        <li><a href="professores.html" class="nav-link active" aria-current="page">Professores</a></li>
+        <li><a href="index.html#rede-apoio" class="nav-link">Rede de Apoio</a></li>
       </ul>
     </nav>
 
@@ -71,7 +68,6 @@
       <li><a href="#comunicacao">Comunicação</a></li>
       <li><a href="#situacoes">Central de situações</a></li>
       <li><a href="#sobrecarga">Sobrecarga</a></li>
-      <li><a href="#saude-mental">Saúde mental</a></li>
       <li><a href="#conversando">Como iniciar conversa</a></li>
       <li><a href="#familia-equipe">Família e equipe escolar</a></li>
       <li><a href="#checklist">Checklist</a></li>
@@ -221,33 +217,6 @@
     </ol>
     <blockquote class="highlight">
       <p>O objetivo não é punir a reação. É compreender a necessidade.</p>
-    </blockquote>
-  </section>
-
-  <!-- 8. SAÚDE MENTAL -->
-  <section class="section" id="saude-mental">
-    <h2>Algumas mudanças merecem atenção</h2>
-    <p>Uma mudança de comportamento não significa automaticamente a presença de um transtorno mental. Entretanto, mudanças persistentes podem indicar que o estudante está enfrentando alguma dificuldade.</p>
-    <div class="cards-grid small">
-      <article class="card small">
-        <h4>Isolamento repentino</h4>
-        <p>Afastamento persistente dos colegas, recusa em participar de atividades conjuntas e preferência por ficar sozinho durante intervalos e recreio.</p>
-      </article>
-      <article class="card small">
-        <h4>Mudança de comportamento</h4>
-        <p>Alterações bruscas no humor, irritabilidade incomum, apatia súbita ou reações desproporcionais a situações corriqueiras da sala de aula.</p>
-      </article>
-      <article class="card small">
-        <h4>Sofrimento emocional</h4>
-        <p>Episódios de choro frequente, ansiedade intensa diante de avaliações, queixas somáticas constantes (dor de barriga, dor de cabeça) ou falas de desesperança.</p>
-      </article>
-      <article class="card small">
-        <h4>Queda de concentração</h4>
-        <p>Dificuldade atípica e contínua para acompanhar o ritmo das aulas, sonolência excessiva ou desorganização repentina com materiais e prazos.</p>
-      </article>
-    </div>
-    <blockquote class="highlight">
-      <p>Observe mudanças em relação ao comportamento habitual daquele estudante, e não apenas comportamentos isolados.</p>
     </blockquote>
   </section>
 
@@ -402,7 +371,7 @@ O QUE AJUDOU: Conversa individual e alguns minutos em ambiente mais tranquilo.
       </article>
       <article class="card small">
         <h4>SUS – CAPSi e UBS</h4>
-        <p>Centros de Atenção Psicossocial Infantojuvenil e Unidades Básicas de Saúde. Serviços públicos e abertos para cuidado em saúde mental em parceria com a família.</p>
+        <p>Centros de Atenção Psicossocial Infantojuvenil e Unidades Básicas de Saúde. Serviços públicos de cuidado que podem orientar a família e articular acompanhamento conforme as necessidades e a rede local.</p>
       </article>
       <article class="card small">
         <h4>Sala de Recursos / AEE</h4>
@@ -424,28 +393,50 @@ O QUE AJUDOU: Conversa individual e alguns minutos em ambiente mais tranquilo.
   </section>
 
   <!-- 19. FONTES -->
-  <section class="section" id="fontes"><h2>Fontes e referências</h2><p>Referências para os temas desta página. Os exemplos, cartões e checklists do Acolher são recursos educativos autorais, sem validação como instrumentos psicológicos. Consulta: 19 de outubro de 2026.</p><ul><li style="margin-bottom:1rem"><a href="referencias.html#R03">STEINBRENNER, Jessica R. et al. Evidence-based practices for children, youth, and young adults with autism. Chapel Hill: University of North Carolina, Frank Porter Graham Child Development Institute, National Clearinghouse on Autism Evidence and Practice, 2020.</a></li><li style="margin-bottom:1rem"><a href="referencias.html#R04">CAST. CAST Universal Design for Learning Guidelines, version 3.0. 2024.</a></li><li style="margin-bottom:1rem"><a href="referencias.html#R07">NATIONAL INSTITUTE OF MENTAL HEALTH. Children and Mental Health: Is This Just a Stage? Sem data identificada na página consultada.</a></li><li style="margin-bottom:1rem"><a href="referencias.html#R13">BRASIL. Lei nº 13.185, de 6 de novembro de 2015. Programa de Combate à Intimidação Sistemática (Bullying).</a></li><li style="margin-bottom:1rem"><a href="referencias.html#R14">BRASIL. Lei nº 14.811, de 12 de janeiro de 2024.</a></li><li style="margin-bottom:1rem"><a href="referencias.html#R16">BRASIL. Lei nº 8.069, de 13 de julho de 1990. Estatuto da Criança e do Adolescente.</a></li><li style="margin-bottom:1rem"><a href="referencias.html#R17">BRASIL. Instituto Nacional de Estudos e Pesquisas Educacionais Anísio Teixeira. O que é o atendimento educacional especializado (AEE)? Publicado em 29 maio 2025; atualizado em 31 ago. 2026.</a></li><li style="margin-bottom:1rem"><a href="referencias.html#R18">U.S. DEPARTMENT OF HEALTH AND HUMAN SERVICES. Respond to Bullying. StopBullying.gov. Sem data identificada na página aberta.</a></li></ul><p><a class="btn primary" href="referencias.html">Ver e copiar todas as referências →</a></p></section>
+  <section class="section" id="fontes"><h2>Fontes e referências</h2><p>Referências para os temas desta página. Os exemplos, cartões e checklists do Acolher são recursos educativos autorais, sem validação como instrumentos psicológicos. Consulta: 19 de outubro de 2026.</p><ul><li style="margin-bottom:1rem"><a href="referencias.html#R03">STEINBRENNER, Jessica R. et al. Evidence-based practices for children, youth, and young adults with autism. Chapel Hill: University of North Carolina, Frank Porter Graham Child Development Institute, National Clearinghouse on Autism Evidence and Practice, 2020.</a></li><li style="margin-bottom:1rem"><a href="referencias.html#R04">CAST. CAST Universal Design for Learning Guidelines, version 3.0. 2024.</a></li><li style="margin-bottom:1rem"><a href="referencias.html#R13">BRASIL. Lei nº 13.185, de 6 de novembro de 2015. Programa de Combate à Intimidação Sistemática (Bullying).</a></li><li style="margin-bottom:1rem"><a href="referencias.html#R14">BRASIL. Lei nº 14.811, de 12 de janeiro de 2024.</a></li><li style="margin-bottom:1rem"><a href="referencias.html#R16">BRASIL. Lei nº 8.069, de 13 de julho de 1990. Estatuto da Criança e do Adolescente.</a></li><li style="margin-bottom:1rem"><a href="referencias.html#R17">BRASIL. Instituto Nacional de Estudos e Pesquisas Educacionais Anísio Teixeira. O que é o atendimento educacional especializado (AEE)? Publicado em 29 maio 2025; atualizado em 31 ago. 2026.</a></li><li style="margin-bottom:1rem"><a href="referencias.html#R18">U.S. DEPARTMENT OF HEALTH AND HUMAN SERVICES. Respond to Bullying. StopBullying.gov. Sem data identificada na página aberta.</a></li></ul><p><a class="btn primary" href="referencias.html">Ver e copiar todas as referências →</a></p></section>
 
+
+  <section class="section continuation" aria-labelledby="continuar-titulo">
+    <div class="section-header">
+      <span class="section-badge">Continue pelo Acolher</span>
+      <h2 id="continuar-titulo">Da prática à parceria com a rede</h2>
+      <p class="section-description">Continue aprofundando a compreensão do autismo ou encontre os serviços que podem apoiar a escola e a família.</p>
+    </div>
+    <div class="audience-grid">
+        <article class="audience-card amber">
+          <div class="icon-box" aria-hidden="true">🧩</div>
+          <h3>Compreender o autismo</h3>
+          <p>Retome as diferenças de comunicação, sensorialidade e necessidades de apoio.</p>
+          <a href="autismo.html" class="btn outline">Acessar o guia de autismo →</a>
+        </article>
+        <article class="audience-card purple">
+          <div class="icon-box" aria-hidden="true">🤝</div>
+          <h3>Acionar a rede de apoio</h3>
+          <p>Conheça os caminhos de cuidado e proteção para compartilhar responsabilidades.</p>
+          <a href="index.html#rede-apoio" class="btn outline">Conhecer a rede de apoio →</a>
+        </article>
+    </div>
+  </section>
   <footer class="site-footer" aria-label="Rodapé">
     <div class="footer-grid">
       <div class="footer-section">
-        <h3>Acolher</h3>
-        <p>Plataforma de apoio educacional focada em inclusão, autismo e saúde mental.</p>
+        <a href="index.html" class="logo footer-brand" aria-label="Acolher - Página inicial"><img class="brand-symbol" src="assets/img/acolher-simbolo.png" alt="" width="56" height="56" />
+        <strong class="brand-name">Acolher</strong>
+        <span class="brand-tag">Educação</span></a>
+        <p>Plataforma educacional sobre autismo, inclusão escolar e rede de apoio.</p>
       </div>
       <div class="footer-section">
         <h3>Conteúdos</h3>
         <ul>
-          <li><a href="autismo">Autismo</a></li>
-          <li><a href="./#saude-mental">Saúde Mental</a></li>
-          <li><a href="professores">Práticas Inclusivas</a></li>
+          <li><a href="autismo.html">Autismo</a></li>
+          <li><a href="professores.html">Práticas Inclusivas</a></li>
         </ul>
       </div>
       <div class="footer-section">
         <h3>Para Você</h3>
         <ul>
-          <li><a href="estudantes">Estudantes</a></li>
-          <li><a href="professores">Professores</a></li>
-          <li><a href="./#rede-apoio">Rede de apoio</a></li>
+          <li><a href="professores.html">Professores</a></li>
+          <li><a href="index.html#rede-apoio">Rede de apoio</a></li>
         </ul>
       </div>
       <div class="footer-section">

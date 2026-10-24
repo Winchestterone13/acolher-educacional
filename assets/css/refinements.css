@@ -1,0 +1,102 @@
+/* Identidade Acolher: refinamento visual sobre a paleta e os componentes existentes. */
+.site-header {
+  padding: .8rem clamp(1.25rem, 3vw, 3rem);
+  gap: 1.25rem;
+  background: rgba(255,255,255,.97);
+  box-shadow: 0 5px 24px rgba(30,58,138,.035);
+}
+.logo { gap: .55rem; flex-shrink: 0; }
+.logo .brand-symbol {
+  width: 56px;
+  height: 56px;
+  flex: 0 0 56px;
+  object-fit: contain;
+}
+.logo .brand-name {
+  color: var(--primary);
+  font-size: 1.65rem;
+  font-weight: 800;
+  letter-spacing: -.055em;
+  line-height: 1;
+}
+.logo .brand-tag {
+  font-size: .7rem;
+  padding: .25rem .6rem;
+  border: 1px solid rgba(13,148,136,.08);
+}
+.nav-list { gap: .35rem; }
+.nav-link { display: inline-block; border-radius: 12px; padding: .55rem .9rem; }
+.nav-link.active, .nav-link[aria-current="page"] {
+  box-shadow: inset 0 0 0 1px rgba(30,58,138,.045);
+}
+.accessibility-toolbar { background: #f8fafc; }
+.hero {
+  border-radius: 26px;
+  background: linear-gradient(125deg, #eff6ff 0%, #f0fdfa 72%, #fef8df 100%);
+  border-color: #e0ecf5;
+  box-shadow: 0 14px 42px -24px rgba(30,58,138,.2), inset 0 0 0 5px rgba(255,255,255,.4);
+  padding: 3.25rem 2.75rem;
+}
+.hero h1 { line-height: 1.17; letter-spacing: -.04em; }
+.hero .subtitle { background: rgba(255,255,255,.85); box-shadow: 0 2px 6px rgba(30,58,138,.025); }
+.hero .description { max-width: 56ch; }
+.hero-buttons { gap: .75rem; }
+.btn { border-radius: 12px; font-weight: 650; }
+.btn.primary { box-shadow: 0 5px 12px rgba(30,58,138,.14); }
+.btn.secondary { box-shadow: 0 5px 12px rgba(13,148,136,.13); }
+.btn.outline { background: rgba(255,255,255,.8); }
+.section-header h2 { letter-spacing: -.03em; line-height: 1.25; }
+.section-description { max-width: 68ch; }
+.section-header .section-description { margin-left: auto; margin-right: auto; }
+.audience-card {
+  border-radius: 20px;
+  border-color: #e2e8f0;
+  padding: 2rem;
+  box-shadow: 0 8px 24px -16px rgba(30,58,138,.16);
+}
+.audience-card::before { opacity: .7; height: 3px; }
+.audience-card.amber::before { background: var(--accent-amber); }
+.audience-card.teal::before { background: var(--secondary); }
+.audience-card.purple::before { background: var(--accent-purple); }
+.audience-card .icon-box { border-radius: 15px; width: 52px; height: 52px; }
+.audience-card .btn { align-self: flex-start; }
+.card, .helpline-card { border-radius: 18px; box-shadow: 0 5px 20px -14px rgba(30,58,138,.2); }
+.card h3, .card h4, .audience-card h3 { letter-spacing: -.02em; }
+.page-nav { border-radius: 16px; }
+.site-footer { background: linear-gradient(180deg,#fff,#f3f8fc); padding-top: 3rem; border-top-color: #dce7f1; }
+.footer-brand { width: fit-content; margin-bottom: 1.2rem; flex-wrap: wrap; }
+.footer-brand .brand-symbol { width: 44px; height: 44px; flex-basis: 44px; }
+.footer-brand .brand-name { font-size: 1.5rem; }
+.footer-brand .brand-tag { display: none; }
+.footer-section h3 { font-size: .9rem; letter-spacing: .02em; }
+.footer-section ul { gap: .8rem; }
+.footer-disclaimer { line-height: 1.8; }
+body.high-contrast .audience-card, body.high-contrast .btn.outline,
+body.high-contrast .accessibility-toolbar { background: #fff; border-color: #000; box-shadow: none; }
+body.high-contrast .audience-card::before { background: #000; }
+@media (min-width: 769px) and (max-width: 1100px) {
+  .site-header { gap: .75rem; }
+}
+@media (max-width: 768px) {
+  .site-header { gap: .65rem; padding: .65rem 1rem; }
+  .logo-wrapper { justify-content: center; }
+  .logo .brand-symbol { width: 50px; height: 50px; flex-basis: 50px; }
+  .logo .brand-name { font-size: 1.65rem; }
+  .nav-list { gap: .2rem; }
+  .nav-link { font-size: .85rem; padding: .45rem .7rem; }
+  .accessibility-toolbar button { padding: .25rem .65rem; }
+  .hero { margin: 1.25rem .75rem 2rem; padding: 2rem 1.4rem; border-radius: 22px; gap: 1.6rem; }
+  .hero-illustration img { max-height: 230px; }
+  .hero h1 { font-size: clamp(1.9rem, 7vw, 2.5rem); }
+  .hero .description { font-size: 1rem; }
+  .hero .subtitle { font-size: .67rem; letter-spacing: .07em; }
+  .hero-buttons .btn { flex: 1 1 100%; }
+  .audience-card { padding: 1.6rem; }
+  .section { padding-top: 2.25rem; padding-bottom: 2.25rem; }
+  .site-footer { padding: 2.5rem 1.5rem 1.75rem; }
+  .section[id], .continuation h2 { scroll-margin-top: 13rem; }
+}
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after { transition: none !important; animation: none !important; }
+}
