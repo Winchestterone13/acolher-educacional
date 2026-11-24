@@ -117,3 +117,25 @@ body.high-contrast .audience-card::before { background: #000; }
   html { scroll-behavior: auto; }
   *, *::before, *::after { transition: none !important; animation: none !important; }
 }
+
+/* Créditos do projeto */
+.credits-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 2rem;
+  padding: 2rem;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 18px;
+}
+.credits-grid h3 { margin: 0 0 1rem; font-size: 1.1rem; }
+.credits-names { list-style: none; padding: 0; margin: 0; }
+.credits-names li { padding: .75rem 0; border-bottom: 1px solid var(--border); overflow-wrap: anywhere; }
+.credits-names li:last-child { border-bottom: 0; }
+.credits-institution { border-left: 2px solid var(--secondary); padding-left: 2rem; }
+.credits-institution p { margin: .5rem 0 0; }
+.credits-institution .credits-acronym { color: var(--primary); font-size: 1.75rem; font-weight: 800; }
+@media (max-width: 768px) {
+  .credits-grid { grid-template-columns: minmax(0, 1fr); padding: 1.5rem; }
+  .credits-institution { border-left: 0; border-top: 2px solid var(--secondary); padding: 1.5rem 0 0; }
+}
